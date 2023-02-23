@@ -1,0 +1,83 @@
+.wallet-bills{
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+.wallet-card{display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+.wallet-info{
+    display: flex;
+    padding: 2rem 3rem;
+    background: #68E365;
+    gap: 0.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(62, 73, 84, 0.4);
+
+}
+.wallet-info img{
+    width: 1.8rem;
+}
+.wallet-info p{
+        margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: #F6F6F6;
+}
+.wallet-info h4{
+        margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 30px;
+    color: white;
+}
+.wallet-in{
+    display: flex;
+    padding: 2rem 3rem;
+    background: #087D4C;
+    gap: 0.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(62, 73, 84, 0.4);
+}
+.wallet-in p{
+        margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: #F6F6F6;
+}
+.wallet-in img{
+    width: 1.8rem;
+}
+.wallet-in h4{
+        margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 30px;
+    color: white;
+}
+.pay-bills h4{
+    font-size: 30px;
+    color: #087D4C;
+    margin-block-end: 0em;
+}
+.wallet-bills hr{
+    width: 70vw;
+    margin-inline-start: 0;
+}
+.nav-icons{
+    display: flex;
+    gap: 5rem;
+    margin-top: 4rem;align-items: center;
+
+}
+.nav-icons img{
+    padding: 2.5rem;
+    border: 3px solid #087D4C;
+    border-radius: 50%;
+    width: 7vw;
+    height: 14vh;
+}
+.nav-icons h4{
+    color: green;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-icons a{
+    text-decoration: none;
+}

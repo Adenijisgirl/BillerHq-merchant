@@ -1,0 +1,60 @@
+/* *{
+    outline: 1px solid blue;
+} */
+.hr-margin{
+    display: flex;
+}
+.sidebar-options{
+    padding: 1rem 2rem;
+}
+
+.merchant-info{
+    padding: 1rem 3rem;
+    border: 1px solid green;
+    border-radius: 20px;
+    text-align: center;
+}
+.merchant-info h4 strong{
+    color: green;
+    font-size: 24px;
+    font-weight: 600;
+}
+.merchant-info h4{
+    margin-block-end: 0em;
+    font-size: 24px;
+    margin-block-start: 0.2em;
+}
+.merchant-info p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 14px;
+    color: #8F8F8F;
+}
+.side-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu a{
+    display: flex;
+    gap: 2rem;
+    padding: 0.9rem 2rem;
+    text-decoration: none;
+}
+.side-menu a img{
+    /* width: 1.5rem; */
+}
+.side-menu a span{
+    color: #969BA0;
+    /* font-size: 16px; */
+}
+/* .hr-guide{
+    display: flex;
+    
+} */
+.side-hr hr{
+    background: green;
+    margin-top: 0rem;
+    margin-block-start: 0em;
+    height: 38rem;
+}
