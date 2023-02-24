@@ -6,3 +6,122 @@
         /* height: 100vh; */
         position: relative;
 }
+/* unknown */
+/* .dashboardlayout {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 300px auto;
+        height: 100vh;
+    }
+    
+    .sidebar {
+        background-color:  #011152;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .maincontent {
+        background-color: white;
+        padding: 2rem 4rem 0rem;
+        overflow: auto;
+    }
+    
+    .logocontainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 1rem;
+    }
+    
+    .closeicon {
+        margin: auto 0rem;
+    }
+    
+    .sidbarcollapse {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 0px auto;
+        height: 100vh;
+        /* overflow: hidden; */
+    /* }
+    
+    .maincontent > .dashboard-nav > .sidebar-container {
+        display: none;
+    }
+    
+    .maincontent > .dashboard-nav {
+        justify-content: flex-end;
+    }
+    
+    .maincontentexpand {
+        margin: 2rem 6.5rem;
+    }
+    
+    .dashboard-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .profile-notification {
+        display: flex;
+    }
+    
+    .profile-notification > a {
+        margin: 0rem 1rem;
+    }
+    
+    .sidbarcollapse > .sidebar {
+        visibility: hidden;
+    }
+    
+    @media only screen and (max-width: 1280px) {
+        .dashboardlayout {
+            grid-template-columns: 260px auto;
+        }
+    
+        .sidbarcollapse {
+            overflow: scroll;
+        }
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .dashboardlayout {
+            grid-template-columns: 225px auto;
+        }
+     */
+        /* .maincontentexpand {
+            margin: 2rem 4rem;
+        }
+    
+        .sidbarcollapse {
+            overflow: scroll;
+        }
+        
+    }
+    
+    
+    
+    @media only screen and (max-width: 992px) {
+        .maincontent {
+            padding: 2rem 2rem 0rem;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {}
+    
+    @media only screen and (max-width: 600px) {
+        .maincontentexpand {
+            margin: 2rem 2rem;
+        }
+    
+       
+    }
+    
+    @media only screen and (max-width: 500px) {
+        
+    } */ 
+
+    @media only screen and (max-width: 1024px){
+        .side-layout{
+                grid-template-columns: 200px auto;
+        }
+    }

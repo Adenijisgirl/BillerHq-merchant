@@ -9,7 +9,7 @@
 }
 
 .merchant-info{
-    padding: 1rem 3rem;
+    padding: 1rem;
     border: 1px solid green;
     border-radius: 20px;
     text-align: center;
@@ -58,3 +58,32 @@
     margin-block-start: 0em;
     height: 38rem;
 }
+@media only screen and (max-width: 767px){
+
+.merchant-info{
+    padding: 0;
+}
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 601px){
+
+.sidebar-options{
+    padding: 1rem 0.3rem;
+}
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+.merchant-info{
+    padding: 0;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 993px){
+    .merchant-info{
+        padding: 0;
+    }
+    }
+    @media only screen and (max-width: 1280px) and (min-width: 1025px){
+        .merchant-info{
+            padding: 0;
+        }
+        }
