@@ -6,10 +6,12 @@
     position: absolute;
     bottom: 0;
     right: 10px;
+   
 }
 .footer a{
     text-decoration: none;
     font-size: 12px;
+    
 }
 .footer a p{
     color: #33B533;
