@@ -20,3 +20,14 @@
 .logo{
     padding-left: 4rem;
 }
+.location{
+    display: flex;
+    justify-content: flex-start;
+    gap: 8rem;
+    height: 6vh;
+    align-items: center;
+}
+.breadcrum-nav h4{
+    color: #087D4C;
+    font-size: 20px;
+}

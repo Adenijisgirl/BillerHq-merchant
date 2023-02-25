@@ -1,6 +1,9 @@
 /* *{
     outline: 1px solid blue;
 } */
+body{
+    color: #FFFFFF;
+}
 .hr-margin{
     display: flex;
 }
@@ -13,6 +16,7 @@
     border: 1px solid green;
     border-radius: 20px;
     text-align: center;
+    margin-right: 2rem;
 }
 .merchant-info h4 strong{
     color: green;
@@ -33,11 +37,15 @@
 .side-menu{
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
-
+hr{
+    color: #ACACAC;
+}
 .side-menu a{
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 2.5rem;
     padding: 0.9rem 2rem;
     text-decoration: none;
 }
@@ -46,14 +54,14 @@
 }
 .side-menu a span{
     color: #969BA0;
-    /* font-size: 16px; */
+    font-size: 18px;
 }
 /* .hr-guide{
     display: flex;
     
 } */
 .side-hr hr{
-    background: green;
+    /* background: green; */
     margin-top: 0rem;
     margin-block-start: 0em;
     height: 38rem;

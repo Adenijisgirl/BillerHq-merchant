@@ -9,56 +9,58 @@ import icon4 from "../assets/Vector9.svg";
 import icon5 from "../assets/Vector1.svg";
 import icon6 from "../assets/Vector2.svg";
 import icon7 from "../assets/Vector3.svg";
+import {MdPlayArrow} from 'react-icons/md'
 
 const Sidebar = () => {
   return (
     <div className="hr-margin">
-    <div className="sidebar-options">
-      <div className="hr-guide">
-        <div className="merchant-info">
-          <img src={merchant} alt="" />
-          <h4>
-            Hi <strong>Cico Serve</strong>
-          </h4>
-          <p> Wallet ID: 10773943</p>
+      <div className="sidebar-options">
+        <div className="hr-guide">
+          <div className="merchant-info">
+            <img src={merchant} alt="" />
+            <h4>
+              Hi <strong>Cico Serve</strong>
+            </h4>
+            <p> Wallet ID: 10773943</p>
+          </div>
+          <hr />
+          <div className="side-menu">
+            <Link to="/dashboard">
+              <img src={icon1} alt="" />
+              <span>Dashboard</span>
+              <span> <MdPlayArrow /></span>
+            </Link>
+
+            <Link to="/account">
+              <img src={icon2} alt="" />
+              <span>Account</span>
+            </Link>
+            <Link to="/history">
+              <img src={icon3} alt="" />
+              <span>History</span>
+            </Link>
+            <Link to="/commission">
+              <img src={icon4} alt="" />
+              <span>Commission</span>
+            </Link>
+            <Link to="/settings">
+              <img src={icon5} alt="" />
+              <span>Settings</span>
+            </Link>
+            <Link to="">
+              <img src={icon6} alt="" />
+              <span>Support</span>
+            </Link>
+            <Link to="">
+              <img src={icon7} alt="" />
+              <span>Logout</span>
+            </Link>
+          </div>
         </div>
-        <hr />
-        <div className="side-menu">
-          <a href="/dashboard">
-            <img src={icon1} alt="" />
-            <span>Dashboard</span>
-          </a>
-          <a href="/account">
-            <img src={icon2} alt="" />
-            <span>Account</span>
-          </a>
-          <a href="">
-            <img src={icon3} alt="" />
-            <span>History</span>
-          </a>
-          <a href="">
-            <img src={icon4} alt="" />
-            <span>Commission</span>
-          </a>
-          <a href="">
-            <img src={icon5} alt="" />
-            <span>Settings</span>
-          </a>
-          <a href="">
-            <img src={icon6} alt="" />
-            <span>Support</span>
-          </a>
-          <a href="">
-            <img src={icon7} alt="" />
-            <span>Logout</span>
-          </a>
-        </div>
-      </div>
       </div>
       <div className="side-hr">
-          <hr />
-        </div>
-      
+        <hr />
+      </div>
     </div>
   );
 };

@@ -1,14 +1,15 @@
 .wallet-bills{
     margin-top: 2rem;
-    margin-left: 1rem;
+    margin-left: 4rem;
 }
 .wallet-card{display: flex;
     justify-content: flex-start;
-    gap: 4rem;
+    gap: 2rem;
 }
 .wallet-info{
     display: flex;
-    padding: 2rem 3rem;
+    justify-content: center;
+    padding: 2rem;
     background: #68E365;
     gap: 0.5rem;
     border-radius: 30px;
@@ -22,6 +23,7 @@
         margin-block-start: 0em;
     margin-block-end: 0em;
     color: #F6F6F6;
+    font-size: 16px
 }
 .wallet-info h4{
         margin-block-start: 0em;
@@ -31,7 +33,7 @@
 }
 .wallet-in{
     display: flex;
-    padding: 2rem 3rem;
+    padding: 2rem ;
     background: #087D4C;
     gap: 0.5rem;
     border-radius: 30px;
@@ -41,6 +43,7 @@
         margin-block-start: 0em;
     margin-block-end: 0em;
     color: #F6F6F6;
+    font-size: 16px
 }
 .wallet-in img{
     width: 1.8rem;
@@ -63,21 +66,22 @@
 .nav-icons{
     display: flex;
     gap: 5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     align-items: center;
     margin-bottom: 2rem;
 }
 .nav-icons img{
-    padding: 2.5rem;
-    border: 3px solid #087D4C;
+    padding: 1rem 2rem;
+    border: 2.4px solid #087D4C;
     border-radius: 50%;
-    width: 7vw;
+    width: 5vw;
     height: 14vh;
 }
 .nav-icons h4{
     color: green;
     font-size: 20px;
     text-align: center;
+    margin-block-start: 0.5em;
 }
 .nav-icons a{
     text-decoration: none;
@@ -135,13 +139,19 @@
 }
 @media only screen and (max-width: 992px) and (min-width: 769px) {
     .wallet-info{
-        padding: 1rem 1rem;
+        padding: 1rem 2rem;
     }
     .wallet-in{
         padding: 1rem 1rem;
     }
     .wallet-info h4{
     font-size: 25px;
+    }
+    .wallet-info p{
+        font-size: 14px;
+    }
+    .wallet-in p{
+        font-size: 14px;
     }
     .wallet-in h4{
         font-size: 25px;
@@ -166,7 +176,7 @@
             padding: 1rem;
         }
         .wallet-bills hr{
-            width: 70%;
+            width: 90%;
         }
         .nav-icons{
             gap: 2rem;
@@ -177,9 +187,6 @@
     gap: 2rem;
     
 }
-.nav-icons img{
-    padding: 1.5rem;
-}
 .wallet-bills {
     margin-top: 2rem;
     margin-left: 6rem;
@@ -188,9 +195,6 @@
 @media only screen and (max-width: 1280px) and (min-width: 1025px){
 .nav-icons{
     gap: 3rem;
-}
-.nav-icons img {
-    padding: 2rem;
 }
 .wallet-bills hr{
     width: auto;
