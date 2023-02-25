@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
 import Account from "../Pages/Account";
+import History from "../Pages/History";
 import Dashboard from "../Pages/Dashboard";
+import Commission from '../Pages/Commission'
+import Buyairtime from "../Pages/Buyairtime";
 import "../stylesheets/dashboardlayout.css";
-import {ReactComponent as Closeicon} from "../assets/closeicon.svg";
+import Buydata from "./Buydata";
+import Settings from "../Pages/Settings";
 
 function App() {
   // const [sidebar, setSidebar] = useState(true);
@@ -30,13 +34,20 @@ function App() {
         </div>
         <div className="side-layout">
           <Sidebar />
-          <Footer />
-          <BrowserRouter>
+
+          <div>
             <Routes>
               <Route path="/dashboard" index exact element={<Dashboard />} />
               <Route path="/account" exact element={<Account />} />
+              <Route path="/account" exact element={<History />} />
+              <Route path="/account" exact element={<Commission />} />
+              <Route path="/buyairtime" exact element={<Buyairtime />} />
+              <Route path="/buydata" exact element={<Buydata />} />
+              <Route path="/settings" exact element={<Settings />} />
             </Routes>
-          </BrowserRouter>
+
+            <Footer />
+          </div>
         </div>
       </div>
     </div>

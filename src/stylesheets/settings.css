@@ -1,0 +1,38 @@
+.settings{
+    padding: 14rem 22rem;
+}
+.settings-page{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #087D4C;
+    border-radius: 8px;
+}
+.settings-page a:-webkit-any-link {
+    text-decoration: none;
+    color: #087D4C;
+    font-size: 18px;
+}
+.settings-page a:-webkit-any-link p{
+margin-left: 2rem;
+margin-block-start: 0.6em;
+margin-block-end: 0.6em;
+}
+.settings-header a:-webkit-any-link h5{
+    color: white;
+    font-size: 20px;
+    margin-block-start: 0;
+    padding: 1rem;
+    margin-block-end: 0;
+}
+.settings-header{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background: #087D4C;
+    padding: 0rem 3rem;
+}
+.settings-container{
+    padding: 1rem 3rem;
+}
+.settings-margin{
+    margin-block-start: 0;
+}

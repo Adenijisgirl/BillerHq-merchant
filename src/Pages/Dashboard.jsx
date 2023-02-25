@@ -6,6 +6,7 @@ import airtime from '../assets/airtime.svg'
 import data from '../assets/data.svg'
 import electricity from '../assets/electricity.svg'
 import cable from '../assets/cable.svg'
+import { Link } from "react-router-dom";
 import Footer from '../Components/Footer';
 
 
@@ -43,22 +44,22 @@ const Dashboard = () => {
             </div>
             <hr />
             <div className="nav-icons">
-                <a href=''>
+                <Link to='/buyairtime'>
                 <img src={airtime} alt="" />
                 <h4>Buy Airtime</h4>
-                </a>
-                <a href=''>
+                </Link>
+                <Link to='/buydata'>
                 <img src={data} alt="" />
                 <h4>Buy Data</h4>
-                </a>
-                <a href=''>
+                </Link>
+                <Link to=''>
                 <img src={electricity} alt="" />
                 <h4>Electricity</h4>
-                </a>
-                <a href=''>
+                </Link>
+                <Link to=''>
                 <img src={cable} alt="" />
                 <h4>Buy Cable</h4>
-                </a>
+                </Link>
             </div>
         </div>
     </div>
