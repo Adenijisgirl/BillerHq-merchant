@@ -20,8 +20,6 @@ const Dashboard = () => {
 
   return (
     <div>
-        <div>
-        </div>
         <div className="wallet-bills">
             <div className="wallet-card">
                 <div className="wallet-info">
@@ -52,11 +50,11 @@ const Dashboard = () => {
                 <img src={data} alt="" />
                 <h4>Buy Data</h4>
                 </Link>
-                <Link to=''>
+                <Link to='/eletricity'>
                 <img src={electricity} alt="" />
                 <h4>Electricity</h4>
                 </Link>
-                <Link to=''>
+                <Link to='/cable'>
                 <img src={cable} alt="" />
                 <h4>Buy Cable</h4>
                 </Link>

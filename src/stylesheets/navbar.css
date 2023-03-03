@@ -31,3 +31,40 @@
     color: #087D4C;
     font-size: 20px;
 }
+
+@media only screen and (max-width: 599px) {
+.green-header{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 100px 50px auto;
+    justify-content: center;
+    padding-right: 0;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    height: auto;
+}
+.green-header a p{
+    font-size: 12px;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 601px){
+.logo{
+    padding-left: 1rem;
+}
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+.logo{
+    padding-left: 1rem;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 993px){
+.logo{
+    padding-left: 1rem;
+}
+}

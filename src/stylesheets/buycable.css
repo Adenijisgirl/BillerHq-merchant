@@ -1,0 +1,77 @@
+.buy-cable{
+    padding: 3rem 4rem;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+
+@media only screen and (max-width: 599px){
+.buy-cable{
+    padding: 3rem 3rem;
+}
+.buy-cable{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+}
+@media only screen and (max-width: 768px) and (min-width: 601px){
+.buy-cable{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+.buy-cable{
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+.buy-cable img{
+    width: 15vw;
+}
+}
+@media only screen and (max-width: 1240px) and (min-width: 993px){
+.buy-cable{
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+}
+
+
+/* // how to reduce the gap between items of grid-template-column using css?
+.ctrl {
+    max-width: 30px;
+    position: relative;
+    bottom: 40px;
+    color: black;
+    text-align: left;
+    padding-left: 1%;
+    margin-bottom: -40px; 
+}
+
+
+.one,.two,.three {
+   position:relative;
+}
+.ctrl {
+    max-width: 30px;
+    position: absolute;
+    bottom: 10px;
+    color: black;
+    text-align: left;
+    padding-left: 1%;
+} */
+
+
+
+
+ /* Source: https://stackoverflow.com/questions/47285595 */
+
+
+
+

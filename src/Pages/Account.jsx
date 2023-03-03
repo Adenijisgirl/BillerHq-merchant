@@ -1,8 +1,14 @@
 import React from 'react'
+import '../stylesheets/account.css'
+
+
+
+
+
 
 const Account = () => {
   return (
-    <div>Account</div>
+    <div className='account-home'>Account</div>
   )
 }
 

@@ -1,0 +1,51 @@
+
+.eletricity-bill{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    padding: 0rem 5rem;
+}
+.eletricity-bill a{
+    margin-top: 3rem;
+}
+
+
+@media only screen and (max-width: 599px){
+.eletricity-bill{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0; 
+    margin-top: 2rem;
+    text-align: center;
+}
+.eletricity-bill img{
+    width: 30vw;
+}
+}
+@media only screen and (max-width: 768px) and (min-width: 601px){
+ .eletricity-bill{
+    grid-template-columns: 100px 100px 100px;
+    padding: 0rem;
+} 
+.eletricity-bill img{
+    width: 12vw;
+} 
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+    .eletricity-bill{
+        grid-template-columns: 130px 130px 130px;
+    padding: 0rem 2rem;
+    }
+    .eletricity-bill img{
+        width: 13vw;
+    } 
+}
+@media only screen and (max-width: 1240px) and (min-width: 993px){
+.eletricity-bill{
+    padding: 1rem 1rem;
+    grid-template-columns: 150px 150px 150px 150px
+}
+.eletricity-bill img{
+    width: 13vw;
+}
+}
