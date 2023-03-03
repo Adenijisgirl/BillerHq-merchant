@@ -36,3 +36,26 @@ margin-block-end: 0.6em;
 .settings-margin{
     margin-block-start: 0;
 }
+
+
+@media only screen and (max-width: 599px) {
+.settings{
+    padding: 1rem;
+}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px){
+.settings {
+    padding: 4rem 1rem;
+}
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+.settings {
+    padding: 4rem 2rem;
+}
+}
+@media only screen and (max-width: 1240px) and (min-width: 993px){
+.settings{
+padding: 4rem 12rem;
+}
+}

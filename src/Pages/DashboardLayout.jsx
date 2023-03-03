@@ -11,6 +11,11 @@ import Buyairtime from "../Pages/Buyairtime";
 import "../stylesheets/dashboardlayout.css";
 import Buydata from "./Buydata";
 import Settings from "../Pages/Settings";
+import Eletricitybill from "./Eletricitybill";
+import Ekedc from "./Ekedc";
+import Buycable from "./Buycable";
+import Support from './Support'
+
 
 function App() {
   // const [sidebar, setSidebar] = useState(true);
@@ -35,15 +40,21 @@ function App() {
         <div className="side-layout">
           <Sidebar />
 
-          <div>
+          <div className="dashboard-layout">
             <Routes>
               <Route path="/dashboard" index exact element={<Dashboard />} />
               <Route path="/account" exact element={<Account />} />
               <Route path="/account" exact element={<History />} />
-              <Route path="/account" exact element={<Commission />} />
+              <Route path="/commission" exact element={<Commission />} />
               <Route path="/buyairtime" exact element={<Buyairtime />} />
               <Route path="/buydata" exact element={<Buydata />} />
               <Route path="/settings" exact element={<Settings />} />
+              <Route path="/eletricity" exact element={<Eletricitybill />} />
+              <Route path='/ekedc' exact element={<Ekedc/>} />
+              <Route path='/cable' exact element={<Buycable/>} />
+              <Route path='/support' exact element={<Support />} />
+              
+
             </Routes>
 
             <Footer />

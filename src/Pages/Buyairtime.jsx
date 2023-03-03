@@ -3,7 +3,7 @@ import '../stylesheets/buyairtime.css'
 const Buyairtime = () => {
   return (
     <div className="buyairtime-home">
-      <form action="">
+      <form className="form" action="">
         <div className="airtime-input">
           <div className="airtime-network">
             <label htmlFor="">Select Mobile Network</label>

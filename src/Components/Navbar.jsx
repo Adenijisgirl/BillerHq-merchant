@@ -65,17 +65,34 @@ const Navbar = () => {
           <div className="">
             <h4>Commission</h4> </div> ) : location.pathname === "/Settings" ? (
           <div className="">
-            <h4>Settings</h4> </div> ) : location.pathname === "/Support" ? (
+            <h4>Settings</h4> </div> ) : location.pathname === "/support" ? (
           <div className="">
             <h4>Support</h4> </div> ) : location.pathname === "/buyairtime" ? (
           <div className="">
             <h4>Buy Airtime</h4> </div> ) : location.pathname === "/buydata" ? (
           <div className="">
-            <h4>Buy Data</h4> </div> ) : null}
+            <h4>Buy Data</h4> </div> ) :  location.pathname === "/settings" ? (
+          <div className="">
+            <h4>Settings</h4></div> ) :location.pathname === "/buyairtime" ? (
+          <div className="">
+            <h4>Buyairtime</h4>
+             </div> ) : location.pathname === "/buydata" ? (
+          <div className="">
+            <h4>Buydata</h4>
+             </div> ) : location.pathname === "/eletricity" ? (
+          <div className="">
+            <h4>Eletricity</h4>
+             </div> ) : location.pathname === "/cable" ? (
+          <div className="">
+            <h4>Buycable</h4>
+             </div> ) : location.pathname === "/ekedc" ? (
+          <div className="">
+            <h4>Ekedc</h4>
+             </div> ) : null }
         </div>
         </div>
         <hr />
-    </div>
+        </div>
   )
 }
 

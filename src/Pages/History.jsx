@@ -1,8 +1,10 @@
 import React from 'react'
+import '../stylesheets/history.css'
+
 
 const History = () => {
   return (
-    <div>History</div>
+    <div className='history-home'>History</div>
   )
 }
 

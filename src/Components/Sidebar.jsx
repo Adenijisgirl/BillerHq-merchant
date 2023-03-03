@@ -13,8 +13,19 @@ import {MdPlayArrow} from 'react-icons/md'
 
 const Sidebar = () => {
   return (
-    <div className="hr-margin">
-      <div className="sidebar-options">
+    <div className="hr-margin navbar">
+      <div
+            className="container nav-container"
+          >
+            <input className="checkbox" type="checkbox" name="" id="" />
+            <div className="hamburger-lines">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
+            </div>
+            
+            
+      <div className="sidebar-options menu-items">
         <div className="hr-guide">
           <div className="merchant-info">
             <img src={merchant} alt="" />
@@ -47,11 +58,11 @@ const Sidebar = () => {
               <img src={icon5} alt="" />
               <span>Settings</span>
             </Link>
-            <Link to="">
+            <Link to="/support">
               <img src={icon6} alt="" />
               <span>Support</span>
             </Link>
-            <Link to="">
+            <Link to="/dashboard">
               <img src={icon7} alt="" />
               <span>Logout</span>
             </Link>
@@ -59,8 +70,9 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="side-hr">
-        <hr />
+        <hr className='hr' />
       </div>
+    </div>
     </div>
   );
 };
