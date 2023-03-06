@@ -1,4 +1,7 @@
 .dashboard-layout{
+    padding: 2rem 4rem;
+}
+.page-option{
     height: 100vh;
 }
 .side-layout{
@@ -129,7 +132,71 @@
     }
 
     @media only screen and (max-width: 599px) {
+        .dashboard-layout{
+            padding: 2rem;
+        }
     .side-layout {
         grid-template-columns: 0px auto;
     }
 }
+@media only screen and (max-width: 768px) and (min-width: 601px){
+
+    .dashboard-layout{
+        padding: 0;
+    }
+    }
+@media only screen and (max-width: 992px) and (min-width: 769px){
+
+.dashboard-layout{
+    padding: 1rem;
+}
+}
+@media only screen and (max-width: 1280px) and (min-width: 993px){
+.dashboard-layout{
+    padding: 0;
+}
+}
+
+
+/* // how to create a refresh button using react?
+// ParentComponent.js
+const ParentComponent = () => {
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  const refresh = () => {
+    axios.get(API_URL + '/counter').then((response) => {
+      setItems(response.data);
+      setLoading(false);
+    }).catch((error) => {
+      setLoading(false);
+      setError(error.message);
+    });
+  };
+  useEffect(refresh, []);
+
+  return (
+    <ChildComponent items={items} refresh={refresh} />
+  );
+
+  // ... rest of my code that shows the data
+};
+
+// ChildComponent.js
+const ChildComponent = ({ items, refresh }) => { 
+  return (
+    // Logic that renders the items in <li>s
+    <button onClick={refresh}>
+      Refresh
+    </button>
+  )
+}; */
+
+
+
+
+/*DELIMITER*/
+/* Source: https://stackoverflow.com/questions/64311350 */
+
+

@@ -1,7 +1,7 @@
 
 .wallet-bills{
-    margin-top: 2rem;
-    margin-left: 4rem;
+    /* margin-top: 2rem;
+    margin-left: 4rem; */
 }
 .wallet-card{display: flex;
     justify-content: flex-start;
@@ -89,7 +89,7 @@
 }
 @media only screen and (max-width: 599px) {
 .wallet-bills{
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 .wallet-card{
     display: flex;
@@ -247,8 +247,8 @@
             gap: 2rem;
         }
         .wallet-bills {
-            margin-top: 4rem;
-            margin-left: 2rem;
+            margin-top: 3rem;
+            /* margin-left: 2rem; */
         }
         .nav-icons{
             gap: 2rem;
@@ -278,8 +278,8 @@
     
 }
 .wallet-bills {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
 }
 .wallet-bills hr{
     width: auto;
@@ -295,4 +295,7 @@
 .wallet-bills hr{
     width: auto;
 }
+} */
+/* *{
+    outline: 1px solid red;
 } */

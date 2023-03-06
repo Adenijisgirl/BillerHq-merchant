@@ -11,7 +11,7 @@
     color: #FFFFFF;
 }
 .commission-body{
-    padding: 4rem 5rem;
+    /* padding: 2rem 3rem; */
 }
 .commission-form{
     display: grid;
@@ -51,10 +51,10 @@
 
 @media only screen and (max-width: 599px) {
 .commission-body {
-    padding: 1rem 1rem;
+    /* padding: 2rem; */
 }
 .wallet-card button{
-    align-self: flex-start;
+    align-self: center;
 }
 .commission-table {
     padding: 0rem;
@@ -85,7 +85,7 @@
 
 @media only screen and (max-width: 992px) and (min-width: 769px){
 .commission-body{
-    padding: 2rem 1rem;
+    /* padding: 2rem 2rem; */
 }
 .commission-table{
     padding: 0;
@@ -112,16 +112,22 @@
     font-size: 16px;
 }
 }
-@media only screen and (max-width: 1240px) and (min-width: 993px){
+@media only screen and (max-width: 1280px) and (min-width: 993px){
 .commission-table {
     padding: 3rem 3rem;
     padding-right: 5rem;
 }
 .commission-body {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
 }
 .commission-form{
     width: fit-content;
+}
+.wallet-in2{
+    padding: 1rem;
+}
+.wallet-info2{
+    padding: 1rem;
 }
 }
 
