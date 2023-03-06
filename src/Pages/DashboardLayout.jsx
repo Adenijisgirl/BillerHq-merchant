@@ -32,7 +32,7 @@ function App() {
     //         </div>
     //         <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
     //     </div>
-    <div>
+    <div className="biller">
       <div className="page-option">
         <div>
           <Navbar />
@@ -57,7 +57,10 @@ function App() {
 
             </Routes>
 
-            <Footer />
+            
+          </div>
+          <div>
+          <Footer />
           </div>
         </div>
       </div>
