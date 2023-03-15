@@ -46,8 +46,15 @@ hr{
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    padding: 0.9rem 2rem;
+    padding: 2rem 2rem;
     text-decoration: none;
+    border-bottom: 1px solid grey;
+}
+.span:hover{
+  color: #087D4C ;
+}
+.side-menu a .active{
+  background-color: greenyellow;
 }
 .side-menu a img{
     /* width: 1.5rem; */
@@ -64,7 +71,7 @@ hr{
     /* background: green; */
     margin-top: 0rem;
     margin-block-start: 0em;
-    height: 38rem;
+    height: 100%;
 }
 
 
@@ -154,7 +161,7 @@ hr{
           .nav-container {
             /* display: block; */
             position: inherit;
-            height: 100vh;
+            height: 100%;
           }
           
           .nav-container .checkbox {
@@ -214,7 +221,7 @@ hr{
             padding-top: 2rem;
             margin-top: -2.5rem;
             width: 100vw;
-            /* height: 100vh; */
+            height: 100%;
             transition: transform 0.5s ease-in-out;
             text-align: center;
             background-color: white;
@@ -266,3 +273,4 @@ hr{
         .hamburger-lines{
             display: none;
         }
+

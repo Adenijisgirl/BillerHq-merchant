@@ -1,0 +1,41 @@
+.confirm-reset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-confirmreset{
+    border: 1px solid green;
+    border-radius: 10px;
+    width: 30vw;
+    padding: 2rem 2rem;
+    margin-top: 7rem;
+}
+.reset-settings{
+    display: flex;
+    flex-direction: column;
+   
+}
+.reset-settings label{
+    color: #92929D;
+    position: absolute;
+    margin-top: -0.7rem;
+margin-left: 1rem;
+background-color: white;
+}
+.reset-settings input{
+    height: 6vh;
+    outline: none;
+    border: 1px solid #92929D;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.form-confirmreset button{
+width: 100%;
+background-color: #087D4C;
+border: 1px solid #087D4C;
+color: #FFFFFF;
+outline: none;
+border-radius: 10px;
+padding: 1rem;
+}

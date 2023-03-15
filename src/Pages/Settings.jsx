@@ -12,15 +12,15 @@ const Settings = () => {
           </Link>
         </div>
         <div className="settings-container">
-          <Link>
+          <Link to='/changepin'>
             <p className="settings-margin">Change Transaction Pin</p>
           </Link>
           <hr />
-          <Link>
+          <Link to='/resetpin'>
             <p>Reset Transaction Pin</p>
           </Link>
           <hr />
-          <Link>
+          <Link to='/privacy'>
             <p>Privacy Policy</p>
           </Link>
         </div>

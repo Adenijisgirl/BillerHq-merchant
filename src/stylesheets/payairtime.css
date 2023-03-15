@@ -1,0 +1,80 @@
+.pay-airtime{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pay-airtime h4{
+    color: #000000;
+}
+.airtime-network2{
+    border: 1px solid #087D4C;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-top: 6rem;
+}
+.select-network{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.select-network h5{
+    color: #087D4C;
+}
+.select-network h5 p{
+    color: black;
+    margin-block-start: 0.3em;
+    font-weight: 400;
+   
+}
+.airtime-amount{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.airtime-amount h4{
+    color: #087D4C;
+}
+.airtime-amount h4 strong{
+    font-size: 32px;
+}
+.airtime-network2 button{
+    width: 100%;
+    border: 1px solid #087D4C;
+    background-color: #087D4C;
+    color: white;
+    outline: none;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 601px){
+
+.pay-airtime{
+    padding-right: 1rem;
+}
+.select-network{
+    gap: 1rem;
+}
+.airtime-network2{
+    padding: 1rem 1rem;
+}
+.select-network img{
+    width: 15vw;
+}
+}
+@media only screen and (max-width: 599px) {
+    .airtime-network2{
+        padding: 1rem 1rem;
+    }
+    .select-network img{
+        width: 18vw;
+    }
+    .select-network{
+        gap: 1rem;
+    }
+}

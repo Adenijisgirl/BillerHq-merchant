@@ -1,0 +1,38 @@
+.change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding-right:  3rem;
+}
+.changepin{
+    margin-top: 6rem;
+    border: 1px solid green;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+}
+.changepin label{
+    color: #92929D;
+    position: absolute;
+    background-color: white;
+    margin-left: 1rem;
+}
+.changepin input{
+    outline: none;
+    height: 6vh;
+    width: 100%;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    border-radius: 9px;
+    border-color: #92929D80;
+}
+.changepin button{
+    border: 1px solid #087D4C;
+    background-color: #087D4C;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+}

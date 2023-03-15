@@ -1,0 +1,50 @@
+.privacy-policy{
+    display: flex;
+    padding: 2rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.privacy{
+    padding: 2rem 2rem;
+    width: 40vw;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+.policy h5{
+color: green;
+}
+.privacy p{
+    color: black;
+    font-size: 14px;
+}
+@media only screen and (max-width: 599px) {
+.privacy-policy{
+    padding: 0;
+}
+.privacy{
+    width: auto;
+}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 601px){
+.privacy-policy{
+    padding: 0;
+}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px){
+.privacy-policy{
+    padding: 0;
+}
+}
+
+@media only screen and (max-width: 1240px) and (min-width: 993px){
+
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px){
+
+}

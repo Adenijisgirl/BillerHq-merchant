@@ -1,0 +1,16 @@
+.air-time{
+    border: 1px solid #087D4C;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
+.air-time button{
+    width: 100%;
+    border: 1px solid #087D4C;
+    background-color: #087D4C;
+    color: white;
+    outline: none;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
