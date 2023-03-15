@@ -22,7 +22,7 @@
 }
 .phone-airtime{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 2rem;
     margin-bottom: 1.5rem;
 }
@@ -51,7 +51,12 @@
     margin-bottom: 1rem;
     border: 1px solid rgba(146, 146, 157, 0.5)
 }
-
+.airtime-error{
+    color: red;
+}
+.d-none{
+    display: none;
+}
 
 
 @media only screen and (max-width: 768px) and (min-width: 601px){

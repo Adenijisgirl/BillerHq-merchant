@@ -72,11 +72,11 @@
     margin-bottom: 2rem;
 }
 .nav-icons img{
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border: 2.4px solid #087D4C;
     border-radius: 50%;
-    width: 5vw;
-    height: 14vh;
+    width: 2vw;
+    height: 4vh;
 }
 .nav-icons h4{
     color: green;
@@ -181,7 +181,7 @@
 }
 .nav-icons img{
     width: 5vw;
-    height: auto;
+    height: 4vh;
     padding: 0.5rem;
 }
 .wallet-bills{
@@ -285,7 +285,7 @@
     width: auto;
 }
 .nav-icons img{
-    height: 12vh;
+    /* height: 12vh; */
 }
 }
 /* @media only screen and (max-width: 1280px) and (min-width: 1025px){

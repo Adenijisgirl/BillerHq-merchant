@@ -40,6 +40,7 @@ const Commission = () => {
             <h4>₦ 230,000</h4>
           </div>
         </div>
+        {/* onClick={refresh} */}
         <button>Refresh</button>
       </div>
       <div className="commit">
@@ -47,11 +48,11 @@ const Commission = () => {
       <form action="" className="commission-form">
           <p>Move funds from your commission to your wallet</p>
           <input type="number" placeholder="₦     ENTER AMOUNT" />
-          {/* <Link onClick={refresh}> */}
+          <Link to='/transfercommission'>
             <button>
             <strong>PROCEED</strong>
           </button> 
-          {/* </Link> */}
+          </Link>
         </form>
         </div>
         </div>

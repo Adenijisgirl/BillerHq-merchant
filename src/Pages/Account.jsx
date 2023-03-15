@@ -8,7 +8,9 @@ import '../stylesheets/account.css'
 
 const Account = () => {
   return (
-    <div className='account-home'>Account</div>
+    <div className='account-home'>
+      
+    </div>
   )
 }
 

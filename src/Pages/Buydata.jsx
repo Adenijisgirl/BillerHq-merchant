@@ -1,13 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from 'react-router-dom'
+import PayData from "./PayData";
+import PinPage from "./PinPage";
+import '../stylesheets/buydata.css'
+
+
+
+
+
 const Buydata = () => {
+  const [pages, setPages] = useState("AirtimePage");
+  const [error, setError] = useState("");
+
+  const [airtime, setAirtime] = useState({
+    Network: "",
+    Bundle: "",
+    Number: "",
+    Amount: "",
+  });
+  const authentication = () => {
+    if (
+      airtime.Network === "" ||
+      airtime.Bundle === "" ||
+      airtime.Number === "" ||
+      airtime.Amount === ""
+    ) {
+      return setError("Input can't be empty");
+    } else {
+      setPages("pinPage");
+    }
+  };
+  const toggle = () =>{
+    setPages('confirmAirtime')
+  }
+  const payPage = () =>{
+    setPages('paidAirtime')
+
+  }
+  
   return (
-    <div className="buyairtime-home">
+    <div>
+    <div className={`buyairtime-home ${pages === 'AirtimePage' ? '': 'd-none'}`}>
       <form className="form" action="">
         <div className="airtime-input">
           <div className="airtime-network">
             <label htmlFor="">Select Mobile Network</label>
-            <select className="network-options">
+            <select className="network-options" onChange={(e) =>{setAirtime({...airtime, Network : e.target.value})}}>
               <option value="mtn"></option>
               <option value="mtn">MTN</option>
               <option value="airtel">AIRTEL</option>
@@ -17,7 +55,7 @@ const Buydata = () => {
           </div>
           <div className="airtime-network">
             <label htmlFor="">Bundle</label>
-            <select className="network-options">
+            <select className="network-options" onChange={(e) =>{setAirtime({...airtime, Bundle : e.target.value})}}>
               <option value="mtn"></option>
               <option value="mtn">Bundle 1</option>
               <option value="airtel">Bundle 2</option>
@@ -28,18 +66,22 @@ const Buydata = () => {
           <div className="phone-airtime">
             <div className="number-airtime">
               <label htmlFor="">Phone Number</label>
-              <input type="number" />
+              <input type="number" onChange={(e) =>{setAirtime({...airtime, Number : e.target.value})}} />
             </div>
             <div className="number-airtime">
               <label htmlFor="">Amount</label>
-              <input type="number" />
+              <input type="number" placeholder="&#8358;" onChange={(e) =>{setAirtime({...airtime, Amount : e.target.value})}} />
             </div>
           </div>
-          <Link to='/'>
+          <Link onClick={authentication}>
           <button>PROCEED</button>
           </Link>
+          <p className="airtime-error">{error}</p>
         </div>
       </form>
+    </div>
+    <PinPage page={pages} toggle={setPages} />
+    <PayData page={pages} airtime={airtime} />
     </div>
   );
 };

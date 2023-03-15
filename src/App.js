@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import DashboardLayout from './Pages/DashboardLayout';
 import {BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom'

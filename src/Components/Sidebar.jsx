@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import "../stylesheets/sidebar.css";
 import { Link } from "react-router-dom";
 import merchant from "../assets/laguda.svg";
@@ -12,6 +12,7 @@ import icon7 from "../assets/Vector3.svg";
 import {MdPlayArrow} from 'react-icons/md'
 
 const Sidebar = () => {
+  const [tab, setTab] = useState("Report");
   return (
     <div className="hr-margin navbar">
       <div
@@ -36,35 +37,35 @@ const Sidebar = () => {
           </div>
           <hr />
           <div className="side-menu">
-            <Link to="/dashboard">
+            <Link to="/dashboard" >
               <img src={icon1} alt="" />
-              <span>Dashboard</span>
-              <span> <MdPlayArrow /></span>
+              <span className="span">Dashboard</span>
+              {/* <span> <MdPlayArrow /></span> */}
             </Link>
 
             <Link to="/account">
               <img src={icon2} alt="" />
-              <span>Account</span>
+              <span className="span">Account</span>
             </Link>
             <Link to="/history">
               <img src={icon3} alt="" />
-              <span>History</span>
+              <span className="span">History</span>
             </Link>
             <Link to="/commission">
               <img src={icon4} alt="" />
-              <span>Commission</span>
+              <span className="span">Commission</span>
             </Link>
             <Link to="/settings">
               <img src={icon5} alt="" />
-              <span>Settings</span>
+              <span className="span">Settings</span>
             </Link>
-            <Link to="/support">
-              <img src={icon6} alt="" />
-              <span>Support</span>
+            <Link to="/support" className="span">
+              <img src={icon6} alt=""  />
+              <span className="span">Support</span>
             </Link>
             <Link to="/dashboard">
               <img src={icon7} alt="" />
-              <span>Logout</span>
+              <span className="span">Logout</span>
             </Link>
           </div>
         </div>

@@ -20,6 +20,9 @@
     box-shadow: 0px 4px 20px rgba(1, 17, 82, 0.1);
 
 }
+.eko-style header img{ 
+    width: 5vw;
+}
 .ekedc-service{
     width: 100%;
     height: 8vh;
@@ -66,6 +69,9 @@
 .eko-style {
     padding: 1rem 1rem;
 }
+.eko-style header img{ 
+    width: 15vw;
+}
 }
 @media only screen and (max-width: 768px) and (min-width: 600px){
 .eko-electricity{
@@ -90,6 +96,9 @@
 }
 .eko-style img{
     width: 10vw;
+}
+.eko-style header img{ 
+    width: 7vw;
 }
 }
 @media only screen and (max-width: 1240px) and (min-width: 993px){
