@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import PinPage from "../Pages/PinPage";
-import PayAirtime from "../Pages/PayAirtime";
+import PinPage from "./PinPage";
+import PayAirtime from "./PayAirtime";
 import "../stylesheets/buyairtime.css";
 import { Link } from "react-router-dom";
 import AirtimeTransaction from "./AirtimeTransaction";

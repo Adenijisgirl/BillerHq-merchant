@@ -5,7 +5,7 @@ import Dstv from '../assets/dstv.svg'
 import Startimes from '../assets/startimes.svg'
 import {Link} from 'react-router-dom'
 import PurchaseCable from "./PurchaseCable";
-import PinPage from '../Pages/PinPage'
+import PinPage from './PinPage'
 
 
 

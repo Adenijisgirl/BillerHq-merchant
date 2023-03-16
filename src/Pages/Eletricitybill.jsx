@@ -7,7 +7,7 @@ import AEDC from "../assets/AEDC.svg";
 import EEDC from "../assets/EEDC.svg";
 import IBEDC from "../assets/IBEDC.svg";
 import KEDCO from "../assets/KEDCO.svg";
-import Ekedc from "../Pages/Ekedc";
+import Ekedc from "./Ekedc";
 import PinPage from "./PinPage";
 import PurchaseElectricity from "./PurchaseElectricity";
 const Eletricitybill = () => {
