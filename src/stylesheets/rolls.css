@@ -149,6 +149,8 @@ form .roll3{
 .success{
    margin-top: 2rem;
    margin-bottom: 2rem;
+   justify-content: center;
+   display: flex;
 }
 .sort{
     display: flex;
