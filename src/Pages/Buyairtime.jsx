@@ -51,7 +51,6 @@ const Buyairtime = () => {
                 <option value="etisalat">ETISALAT</option>
               </select>
             </div>
-
             <div className="phone-airtime">
               <div className="number-airtime">
                 <label htmlFor="">Phone Number</label>
@@ -64,10 +63,10 @@ const Buyairtime = () => {
               </div>
               <p className="airtime-error">{error}</p>
             </div>
+            <p className="airtime-error">{error}</p>
             <Link onClick={authentication}>
               <button>PROCEED</button>
             </Link>
-            {/* <p className="airtime-error">{error}</p> */}
           </div>
         </form>
       </div>

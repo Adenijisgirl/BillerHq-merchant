@@ -6,6 +6,7 @@ import Dstv from "../assets/dstv.svg";
 import Startimes from "../assets/startimes.svg";
 import PayElectricity from "../Pages/PayElectricity"
 import PurchaseElectricity from '../Pages/PurchaseElectricity'
+import PayCable from "./PayCable";
 
 
 
@@ -88,7 +89,9 @@ const PurchaseCable = (props) => {
         </div>
       </div>
       {/* <PurchaseElectricity page={page} toogle={setElectricity} setPage={setPage}/> */}
-      <PayElectricity  light={light} page={props.page} setPage={props.setPage} electricity={props.electricity}  />
+      <PurchaseElectricity  light={light} page={props.page} setPage={props.setPage} electricity={props.electricity}  />
+      <PayCable  light={light} page={props.page} setPage={props.setPage} electricity={props.electricity}  />
+
 
     </div>
   );

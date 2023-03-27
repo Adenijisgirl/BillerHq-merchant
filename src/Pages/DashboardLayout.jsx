@@ -7,11 +7,11 @@ import Account from "../Pages/Account/Account";
 import History from "../Pages/History";
 import Dashboard from "../Pages/Dashboard";
 import Commission from '../Pages/Commission'
-import BuyAirtime from "../Pages/BuyAirtime";
+import BuyAirtime from "./BuyAirtime";
 import "../stylesheets/dashboardlayout.css";
 import BuyData from "./BuyData";
 import Settings from "../Pages/Settings";
-import EletricityBill from "./EletricityBill";
+import EletricityBill from './EletricityBill'
 import Ekedc from "./Ekedc";
 import BuyCable from "./BuyCable";
 import Support from './Support'

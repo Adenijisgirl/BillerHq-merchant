@@ -8,7 +8,7 @@ import '../stylesheets/payelectricity.css'
 
 const PayCable = (props) => {
   return (
-    <div className={`pay-airtime ${ props.electricity === '' ? "d-none" : ''}`}>
+    <div className={`pay-airtime ${ props.page === "payElectricity"? "" : 'd-none'}`}>
       <div className="airtime-network2">
         <div className="select-network select-network2">
         <h5>

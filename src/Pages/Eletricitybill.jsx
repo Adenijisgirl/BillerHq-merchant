@@ -28,25 +28,25 @@ const Eletricitybill = () => {
   return (
     <div>
       <div className={`eletricity-bill ${electricity === '' ? '' : 'd-none'}`}>
-        <Link onClick={() => {setElectricity("Ikeja"); setPage("inputPage")}}>
+        <Link onClick={() => {setElectricity("Ikeja")}}>
           {" "}
           <img src={Ikeja} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("Eko Electricity"); setPage("inputPage")}}>
+        <Link onClick={() => {setElectricity("Eko Electricity")}}>
           <img src={EKEDC} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("Aedc"); setPage("inputPage")}}>
+        <Link onClick={() => {setElectricity("Aedc")}}>
           {" "}
           <img src={AEDC} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("EEDC"); setPage("inputPage")}}>
+        <Link onClick={() => {setElectricity("EEDC")}}>
           {" "}
           <img src={EEDC} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("Ibadan"); setPage("inputPage")}}>
+        <Link onClick={() => {setElectricity("Ibadan")}}>
           <img src={IBEDC} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("Kano"); setPage("inputPage")}}>
+        <Link onClick={() => {setElectricity("Kano")}}>
           <img src={KEDCO} alt="" />
         </Link>
       </div>

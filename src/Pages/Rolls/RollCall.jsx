@@ -205,9 +205,9 @@ const RollCall = () => {
             </div>
           </div>
         </div>
-        <Link to='createrole' className="roll-send">
-          <button>Send</button>
-        </Link>
+       <Link to='/createrole' className="roll-send">
+       <button>Send</button>
+       </Link>
       </form>
 
       {/* <div className="success">
