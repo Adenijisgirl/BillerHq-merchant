@@ -5,6 +5,10 @@ import "../stylesheets/transfercommission.css";
 // import OTPInput, { ResendOTP } from "otp-input-react";
 
 const PurchaseElectricity = (props) => {
+
+  const action = () => { props.setPage('payElectricity')}
+
+  
   // const [OTP, setOTP] = useState("");
   //Custom timer and button component
   // const renderButton = (buttonProps) => {
@@ -27,7 +31,7 @@ const PurchaseElectricity = (props) => {
   return (
     <div
       className={` commission-transfer ${
-        props.electricity === "pinPage" ? "" : "d-none"   
+        props.page === "pinPage" ? "" : "d-none"   
       }`}
     >
       <div className="commission-access">
@@ -81,12 +85,10 @@ const PurchaseElectricity = (props) => {
           </div>
           {/* <ResendOTP className='otp-button' renderButton={renderButton} renderTime={renderTime} /> */}
           <Link
-            onClick={() => {
-              props.toggle("confirmElectricity");
-            }}
+            
           >
 
-            <button  className="proceed-button">PROCEED</button>
+            <button onClick={action}  className="proceed-button">PROCEED</button>
           </Link>
         </form>
       </div>

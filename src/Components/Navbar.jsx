@@ -168,6 +168,10 @@ const Navbar = () => {
             <div className="">
               <h4>Review Transaction</h4>{" "}
             </div>
+          ) : location.pathname === "/rolls" ? (
+            <div className="">
+              <h4>Role and Permission</h4>{" "}
+            </div>
           ) : null}
         </div>
       </div>

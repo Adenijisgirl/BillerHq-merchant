@@ -1,3 +1,234 @@
 .account-home{
     
 }
+.account-wallet{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+.account-wallet .wallet1{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    border: 1px solid #219653;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 11vw;
+}
+.wallet1 p{
+    color: gray;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+}
+.wallet1 h4{
+    color: black;
+    margin-block-start: 0em;
+    margin-block-end: 0.33em;
+}
+.wallet1 img{
+    width: 3vw;
+}
+.check-box li ::marker{
+    display: none !important;;
+}
+.download-settings{
+    display: flex;
+    gap: 3rem;
+}
+.download-settings button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #B3B3B3;
+    
+}
+.download-settings .download{
+    background-color: #219653;
+    width: 12vw;
+    height: 6vh;
+color: white;
+}
+.account-table{
+    margin-top: 1rem;
+    border: 1px solid #219653;
+    box-shadow: 31px 12px 23px rgba(62, 73, 84, 0.04);
+    border-radius: 30px;
+    width: 100%;
+}
+.table-down{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.table-head1{
+    /* display: flex;
+    justify-content: space-between; */
+    border-bottom: 1px solid #F5F5F5;
+    padding: 1rem;
+}
+.table-head1 th{
+    color: #000000;
+    text-align: start;
+}
+/* tbody th{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #F5F5F5;
+    padding: 1rem;
+} */
+.account-table tbody tr th{
+    color: black;
+    font-weight: 300;
+    text-align: start;
+}
+.rolls2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+    background-color: #087D4C;
+    border-radius: 20px;
+    border: 1px solid #087D4C;
+    outline: none;
+    width: 12vw;
+    color: white;
+}
+
+
+/* create user styling */
+.create-user{
+    display: flex;
+    justify-content: center;
+}
+.form-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #219653;
+    border-radius: 20px;
+    padding: 5rem 2rem;
+}
+.form-label{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.new-user{
+display: flex;
+flex-direction: column;
+
+}
+.account-user{
+    margin-bottom: 2rem;
+}
+.account-user label{
+    color: gray;
+    position: absolute;
+    margin-top: -1rem;
+    background-color: white;
+    margin-left: 0.5rem;
+}
+.account-user input{
+    height: 6vh;
+    width: 15vw;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #92929D80;
+    padding: 0 1rem;
+}
+.form-user a:-webkit-any-link{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+.account-user select{
+    width: 100%;
+    height: 6vh;
+}
+
+.form-user a:-webkit-any-link button{
+    padding: 0.5rem 1.5rem;
+    background-color: #087D4C;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 599px) {
+.account-wallet{
+    display: flex;
+    flex-direction: column;justify-content: center;
+    align-items: center;
+}
+.download-settings{
+    display: flex;
+    flex-direction: column;justify-content: center;
+    align-items: center;
+}
+.account-wallet .wallet1{
+    width: 35vw;
+}
+    .wallet1 img {
+        width: 8vw;
+}
+.download-settings button{
+    width: 50%;
+}
+.download-settings .download {
+width: 50%;
+background-color: white;
+color: green;
+}
+}
+@media only screen and (max-width: 768px) and (min-width: 601px){
+    .account-wallet{
+        display: flex;
+        flex-direction: column;justify-content: center;
+        align-items: center;
+    }
+    .download-settings{
+        display: flex;
+        flex-direction: column;justify-content: center;
+        align-items: center;
+    }
+    .account-wallet .wallet1{
+        width: 35vw;
+    }
+        .wallet1 img {
+            width: 8vw;
+    }
+    .download-settings button{
+        width: 50%;
+    }
+    .download-settings .download {
+    width: 50%;
+    background-color: white;
+    color: green;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px){
+.account-wallet{
+    gap: 2rem;
+}
+.account-wallet .wallet1{
+    width: auto;
+}
+.download-settings .download{
+    width: auto;
+}
+.download-settings button{
+    width: auto;
+}
+}

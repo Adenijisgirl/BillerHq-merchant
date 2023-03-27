@@ -8,7 +8,7 @@ body{
     display: flex;
 }
 .sidebar-options{
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
 }
 
 .merchant-info{
@@ -17,6 +17,7 @@ body{
     border-radius: 20px;
     text-align: center;
     margin-right: 2rem;
+    margin-left: 1rem;
 }
 .merchant-info h4 strong{
     color: green;
@@ -37,16 +38,16 @@ body{
 .side-menu{
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
 }
 hr{
     color: #ACACAC;
 }
 .side-menu a{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 2.5rem;
-    padding: 2rem 2rem;
+    padding: 2rem 1.6rem;
     text-decoration: none;
     border-bottom: 1px solid grey;
 }
@@ -78,25 +79,18 @@ hr{
 
 @media only screen and (max-width: 768px) and (min-width: 601px){
 
-.sidebar-options{
-    padding: 1rem 0.3rem;
-}
+
 }
 @media only screen and (max-width: 992px) and (min-width: 769px){
 .merchant-info{
     padding: 0;
-}
-.sidebar-options {
-    padding: 1rem 1rem;
 }
 }
 @media only screen and (max-width: 1240px) and (min-width: 993px){
     .merchant-info{
         padding: 0;
     }
-    .sidebar-options {
-      padding: 1rem 1rem;
-    }
+    
 }
     @media only screen and (max-width: 1280px) and (min-width: 1025px){
         .merchant-info{
@@ -108,20 +102,19 @@ hr{
     /* for lowest media screen */
     @media only screen and (max-width: 599px) {
       .side-menu a{
-        padding: 0 1rem;
+        
         gap: 1rem;
-        margin-bottom: 2rem;
       }
       .merchant-info {
         padding: 0; 
-         margin-right: 0;
+        margin-right: 1rem;
       }
         .hr{
             display: none;
            }
         .container {
-            max-width: 1050px;
-            width: 90%;
+            max-width: 200px;
+            /* width: 90%; */
             margin: auto;
           }
           
@@ -230,7 +223,7 @@ hr{
             width: 1rem;
           }
           .navbar .menu-items span {
-              font-size: 0.8rem;
+              font-size: 18px;
             font-weight: 500;
           }
           

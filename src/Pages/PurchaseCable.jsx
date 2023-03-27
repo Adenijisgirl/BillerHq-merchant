@@ -5,6 +5,7 @@ import Gotv from "../assets/gotv.svg";
 import Dstv from "../assets/dstv.svg";
 import Startimes from "../assets/startimes.svg";
 import PayElectricity from "../Pages/PayElectricity"
+import PurchaseElectricity from '../Pages/PurchaseElectricity'
 
 
 
@@ -15,6 +16,7 @@ const PurchaseCable = (props) => {
     Account: "",
     Cable: "",
     Amount: "",
+  
   });
   const authentication = (e) => {
     e.preventDefault();
@@ -85,6 +87,7 @@ const PurchaseCable = (props) => {
           </form>
         </div>
       </div>
+      {/* <PurchaseElectricity page={page} toogle={setElectricity} setPage={setPage}/> */}
       <PayElectricity  light={light} page={props.page} setPage={props.setPage} electricity={props.electricity}  />
 
     </div>

@@ -56,11 +56,11 @@ const Buydata = () => {
           <div className="airtime-network">
             <label htmlFor="">Bundle</label>
             <select className="network-options" onChange={(e) =>{setAirtime({...airtime, Bundle : e.target.value})}}>
-              <option value="mtn"></option>
-              <option value="mtn">Bundle 1</option>
-              <option value="airtel">Bundle 2</option>
-              <option value="glo">Bundle 3</option>
-              <option value="etisalat">Bundle 4</option>
+              <option value=""></option>
+              <option value="Bundle 1">Bundle 1</option>
+              <option value="Bundle 2">Bundle 2</option>
+              <option value="Bundle 3">Bundle 3</option>
+              <option value="Bundle 4">Bundle 4</option>
             </select>
           </div>
           <div className="phone-airtime">

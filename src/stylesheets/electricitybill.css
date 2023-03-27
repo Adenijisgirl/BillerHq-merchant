@@ -2,7 +2,7 @@
 .eletricity-bill{
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
-    padding: 0rem 5rem;
+   
 }
 .eletricity-bill a{
     margin-top: 3rem;

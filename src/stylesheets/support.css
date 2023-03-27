@@ -28,11 +28,12 @@
     font-weight: 500;
 }
 .form-full input{
-    width: 100%;
+    width: 90%;
     height: 6vh;
     border-radius: 10px;
     outline: none;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #087D4C;
+    padding-left: 1rem;
 }
 .contact-support{
     display: flex;
@@ -58,12 +59,14 @@
     color: #000000;
     font-weight: 500;
 }
-.form-message input{
+.form-message textarea{
     height: 20vh;
-    width: 100%;
+    width: 94%;
     border-radius: 10px;
     outline: none;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #087D4C;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 .form-mess button{
     padding: 1rem;

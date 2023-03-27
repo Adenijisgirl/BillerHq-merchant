@@ -42,7 +42,8 @@ const Support = () => {
           <div className="form-mess">
             <div className="form-message">
               <label htmlFor="">Message</label>
-              <input type="text"  placeholder='Say something about you...' />
+              <textarea name="" id="" cols="30" rows="10" placeholder='Say something about you...'></textarea>
+              {/* <input type="text"   /> */}
             </div>
             <Link to='/adminsupport'>
             <button>SUBMIT FORM </button>

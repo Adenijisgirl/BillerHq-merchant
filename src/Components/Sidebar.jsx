@@ -9,6 +9,7 @@ import icon4 from "../assets/Vector9.svg";
 import icon5 from "../assets/Vector1.svg";
 import icon6 from "../assets/Vector2.svg";
 import icon7 from "../assets/Vector3.svg";
+import icon8 from '../assets/Vector10.svg'
 import {MdPlayArrow} from 'react-icons/md'
 
 const Sidebar = () => {
@@ -62,6 +63,10 @@ const Sidebar = () => {
             <Link to="/support" className="span">
               <img src={icon6} alt=""  />
               <span className="span">Support</span>
+            </Link>
+            <Link to="/roles" className="span">
+              <img src={icon8} alt=""  />
+              <span className="span">Roles and Permission</span>
             </Link>
             <Link to="/dashboard">
               <img src={icon7} alt="" />

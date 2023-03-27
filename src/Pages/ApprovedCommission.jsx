@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Mark from "../assets/Marked.svg";
 import "../stylesheets/approvedcommission.css";
 
-const ApprovedCommission = () => {
+const ApprovedCommission = (props) => {
   return (
     <div>
       <div className="approved-commission">
@@ -12,7 +12,7 @@ const ApprovedCommission = () => {
           <div className="approved-details">
             <h6>
               Amount: <br /> <br />
-              <strong>N10,000.00</strong>
+              <strong>{props.value}</strong>
             </h6>
           </div>
           <p className="approved-text">
