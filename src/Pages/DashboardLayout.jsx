@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
-import Account from "../Pages/Account";
+import Account from "../Pages/Account/Account";
 import History from "../Pages/History";
 import Dashboard from "../Pages/Dashboard";
 import Commission from '../Pages/Commission'
@@ -17,19 +17,22 @@ import BuyCable from "./BuyCable";
 import Support from './Support'
 import TransferCommission from "./TransferCommission";
 import ApprovedCommission from "./ApprovedCommission";
-import ChangePin from "./ChangePin";
+import ChangePin from "./ChangePin/ChangePin";
 import NewPin from "./NewPin";
 import Privacy from "./Privacy";
-import ResetPin from "./ResetPin";
-import VerifyPin from "./VerifyPin";
+import ResetPin from "./ResetTransaction/ResetPin";
+import VerifyPin from "./ResetTransaction/VerifyPin";
 import WalletHistory from "./WalletHistory";
 import AdminSupport from "./AdminSupport";
-import ConfirmReset from "./ConfirmReset";
+import ConfirmReset from "./ResetTransaction/ConfirmReset";
 import PinPage from "./PinPage";
 import PayAirtime from "./PayAirtime";
 import AirtimeTransaction from "./AirtimeTransaction";
 import PayElectricity from "./PayElectricity";
-
+import Roll from "./Rolls/Roll";
+import RollCall from "./Rolls/RollCall";
+import CreateRole from "./Rolls/CreateRole";
+import CreateUser from "./Account/CreateUser";
 
 function App() {
   // const [sidebar, setSidebar] = useState(true);
@@ -81,7 +84,10 @@ function App() {
                <Route path='/payairtime' exact element={<PayAirtime />} /> 
                <Route path='/airtimetransaction' exact element={<AirtimeTransaction />} /> 
                <Route path='/payelectricity' exact element={<PayElectricity />} /> 
-
+               <Route path='/roles' exact element={<Roll />} /> 
+               <Route path='/rolecall' exact element={<RollCall />} /> 
+               <Route path='/createrole' exact element={<CreateRole />} />
+               <Route path='/createuser' exact element={<CreateUser />} />
             </Routes>
 
             

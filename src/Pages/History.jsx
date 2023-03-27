@@ -2,12 +2,48 @@ import React from "react";
 import { VscSearch } from "react-icons/vsc";
 import "../stylesheets/history.css";
 import { Link } from "react-router-dom";
+import download from '../assets/download.svg'
 
 
 const History = () => {
   return (
     <div className="history-home">
-      <form action="">
+      
+      <div className="history-transaction">
+        <div className="total-transaction">
+          <div className="main-total">
+            <p>Total </p>
+            <div>0</div>
+          </div>
+          <h4>N0.00</h4>
+        </div>
+        <div className="total-transaction">
+          <div className="main-total">
+            <p>Credit</p>
+            <div>0</div>
+          </div>
+          <h4>N0.00</h4>
+        </div>
+        <div className="total-transaction">
+          <div className="main-total">
+            <p>Debit</p>
+            <div>0</div>
+          </div>
+          <h4>N0.00</h4>
+        </div>
+      </div>
+      <div className="reset-transaction">
+        <Link to="/wallethistory">
+          <button className="butt">View Wallet Account History</button>
+        </Link>
+        <button>Reset All Filter </button>
+      </div>
+       <div className="class-transact">
+          <h4>Transactions</h4> 
+          </div>
+      <div className="transactions-row">
+       
+          <form action="">
         <div className="history-product">
           <div className="product">
             <label htmlFor="">Filter Product</label>
@@ -45,53 +81,21 @@ const History = () => {
           <button> Filter </button>
         </div>
       </form>
-      <div className="history-transaction">
-        <div className="total-transaction">
-          <div className="main-total">
-            <p>Total Transactions </p>
-            <div>0</div>
-          </div>
-          <h4>N0.00</h4>
-        </div>
-        <div className="total-transaction">
-          <div className="main-total">
-            <p>Successful</p>
-            <div>0</div>
-          </div>
-          <h4>N0.00</h4>
-        </div>
-        <div className="total-transaction">
-          <div className="main-total">
-            <p>Failed</p>
-            <div>0</div>
-          </div>
-          <h4>N0.00</h4>
-        </div>
-      </div>
-      <div className="reset-transaction">
-        <Link to="/wallethistory">
-          <button className="butt">View Wallet Account History</button>
-        </Link>
-        <button>Reset All Filter </button>
-      </div>
-      <div className="transactions-row">
-        <div className="class-transact">
-          <p>Transactions</p>
           <div className="transaction-upload">
-            <button>CSV</button>
-            <button>Excel </button>
-            <button>PDF</button>
+            <button> <img src={download} alt="" /> <p> Download </p> </button>
+            {/* <button>Excel </button>
+            <button>PDF</button> */}
           </div>
-        </div>
-        <form action="">
+        {/* </div> */}
+        {/* <form action="">
           <VscSearch />
           <input
             className="input-search"
             type="text"
             placeholder="  Search here..."
           />
-        </form>
-      </div>
+        </form>*/}
+      </div> 
       <table>
         <thead>
           <th className="table-head">

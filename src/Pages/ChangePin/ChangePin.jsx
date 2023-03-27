@@ -1,5 +1,5 @@
 import React from 'react'
-import '../stylesheets/changepin.css';
+import '../../stylesheets/changepin.css';
 import {Link} from 'react-router-dom'
 
 

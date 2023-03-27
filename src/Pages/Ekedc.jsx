@@ -42,7 +42,7 @@ props.setPage("pinPage")
   return (
   <div>
     <div
-      className={`eko-electricity ${props.electricity === '' || props.page === 'pinPage' ? 'd-none' : ''}`}
+      className={`eko-electricity ${props.page === 'inputPage' ? '' : 'd-none'}`}
     >
       <div className="eko-style">
         <header>
@@ -72,7 +72,7 @@ props.setPage("pinPage")
       </div>
     </div>
     <PayElectricity  light={light} page={props.page} setPage={props.setPage} electricity={props.electricity}  />
-    <ElectricityTransaction electricity={props.electricity} light={light} setElectricity={props.setElectricity} />
+    <ElectricityTransaction electricity={props.electricity} setPage={props.setPage} light={light} setElectricity={props.setElectricity} />
     </div>
 
    

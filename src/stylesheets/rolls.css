@@ -1,0 +1,180 @@
+.create-mode{
+    display: flex;
+    justify-content: flex-end;
+}
+.rolls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #087D4C;
+    border-radius: 20px;
+    border: 1px solid #087D4C;
+    outline: none;
+    width: 12%;
+    color: white;
+}
+.role-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 20rem;
+}
+.table-paragra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #F5F5F5;
+    margin-bottom: 1rem;
+}
+.table-paragra tr{
+    color: #999999;
+    font-weight: 300;
+}
+.roller{
+    display: flex;
+   
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #087D4C;
+    border-radius: 20px;
+    border: 1px solid #087D4C;
+    outline: none;
+  padding: 0 2rem;
+    color: white;
+}
+
+/* rollcalls styling */
+.roll-call{
+    display: flex;
+    flex-direction: column;
+     justify-content: center; 
+     align-items: center; 
+}
+.forming{
+    border: 1px solid #087D4C;
+    /* width: 40vw; */
+    padding: 1rem 1rem;
+    border-radius: 20px;
+}
+form .roll1{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+     margin-top: 1rem;
+     margin-bottom: 2rem;
+}
+form .roll2{
+    display: flex;
+    flex-direction: column;
+   
+}
+.roll2 label{
+    color: grey;
+    position: absolute;
+    margin-left: 0.5rem;
+    background-color: white;
+}
+form .roll3{
+    display: flex;
+    flex-direction: column;
+}
+.roll3 label{
+    color: grey;
+    position: absolute;
+    
+    margin-left: 0.5rem;
+    background-color: white;
+}
+ .roll1 input{
+    width: 20vw;
+    height: 6vh;
+    margin-top: 0.8rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #92929D80;
+}
+.roll3 input{
+    padding: 0 0.5rem;
+}
+.roll2 input{
+    width: 15vw;
+    height: 6vh;
+    margin-top: 0.8rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #92929D80;
+}
+.roll2 select{
+    width: 15.5vw;
+    height: 7vh;
+    margin-top: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #92929D80;
+}
+.check-check{
+    display: flex;
+    gap: 5rem;
+}
+.check1{
+    display: block;
+    
+}
+.check2{
+    display: flex;
+    gap: 0.5rem;
+}
+.check2 p{
+    color: #087D4C;
+    font-size: 14px;
+}
+.roll-send{
+    display: flex;
+    justify-content: flex-end;
+}
+.roll-send button{
+    background-color: #087D4C;
+    color: white;
+    outline: none;
+    border: 1px solid #087D4C;
+    border-radius: 20px;
+    width: 15%;
+    height: 5vh;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* roll call success messgae */
+.success{
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+.sort{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    padding: 2rem 3rem;
+    border-radius: 120px;
+}
+.success h5{
+    color: #27AE60;
+}
+.success p{
+    color: grey;
+    text-align: center;
+}
+.sort button{
+    background-color: #087D4C;
+    color: white;
+    outline: none;
+    border: 1px solid #087D4C;
+    border-radius: 20px;
+    /* width: 15%; */
+    /* height: 5vh; */
+    padding: 0.7rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

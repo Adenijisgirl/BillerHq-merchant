@@ -13,14 +13,20 @@ const PayData = (props) => {
       <div className="airtime-network2">
         <div className="select-network">
           <h5>
-            Select Mobile Network:
+            Selected Mobile Network:
             <p>{props.airtime.Network}</p>
           </h5>
           <h5>
+            Bundle:
+            <p>{props.airtime.Bundle}</p>
+          </h5>
+          <img src={props.airtime.Network === 'airtel' ? Airtelnetwork : props.airtime.Network === 'mtn' ? Mtnnetwork : props.airtime.Network === 'glo' ? Glonetwork: props.airtime.Network === '9mobile' ? Etisalatnetwork : ''} alt="" />
+        </div>
+        <div className="select-network">
+        <h5>
             Phone Number:
             <p>{props.airtime.Number}</p>
           </h5>
-          <img src={props.airtime.Network === 'airtel' ? Airtelnetwork : props.airtime.Network === 'mtn' ? Mtnnetwork : props.airtime.Network === 'glo' ? Glonetwork: props.airtime.Network === '9mobile' ? Etisalatnetwork : ''} alt="" />
         </div>
         <div className="airtime-amount">
           <h4>

@@ -22,8 +22,9 @@
 }
 
 .commission-table{
-    padding: 3rem 10rem;
-    padding-right: 16rem;
+    /* padding: 3rem 10rem; */
+    padding-right: 37.5rem;
+    margin-top: 4rem;
 }
 .commission-form p{
     color: #000000;
@@ -47,6 +48,10 @@
     border: 1px solid #087D4C;
     color: #FFFFFF;
     width: 100%;
+}
+form .error-message{
+    color: red;
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 599px) {

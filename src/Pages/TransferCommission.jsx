@@ -4,7 +4,7 @@ import Lock from "../assets/password-padlock.svg";
 import "../stylesheets/transfercommission.css";
 // import OTPInput, { ResendOTP } from "otp-input-react";
 
-const TransferCommission = () => {
+const TransferCommission = (props) => {
   // const [OTP, setOTP] = useState("");
   //Custom timer and button component
   // const renderButton = (buttonProps) => {
@@ -24,7 +24,7 @@ const TransferCommission = () => {
   //  };
   //  const renderTime = () => React.Fragment;
   return (
-    <div className="commission-transfer">
+    <div className='commission-transfer'>
       <div className="commission-access">
         <img src={Lock} alt="" />
         <div className="commission-word">Your Four Digit PIn </div>

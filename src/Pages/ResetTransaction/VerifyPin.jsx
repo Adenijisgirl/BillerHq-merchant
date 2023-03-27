@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import OTPInput, { ResendOTP } from "otp-input-react";
 import { Link } from 'react-router-dom'
-import '../stylesheets/verifypin.css'
+import '../../stylesheets/verifypin.css'
 
 
 
