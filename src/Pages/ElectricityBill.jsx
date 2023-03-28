@@ -28,25 +28,44 @@ const Eletricitybill = () => {
   return (
     <div>
       <div className={`eletricity-bill ${electricity === '' ? '' : 'd-none'}`}>
-        <Link onClick={() => {setElectricity("Ikeja")}}>
+        <Link           onClick={() => {
+            setElectricity("Ikeja");
+            setPage("inputPage");
+          }}
+>
           {" "}
           <img src={Ikeja} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("Eko Electricity")}}>
+        <Link   onClick={() => {
+            setElectricity("EKEDC");
+            setPage("inputPage");
+          }}>
           <img src={EKEDC} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("Aedc")}}>
+        <Link   onClick={() => {
+            setElectricity("AEDC");
+            setPage("inputPage");
+          }}>
           {" "}
           <img src={AEDC} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("EEDC")}}>
+        <Link   onClick={() => {
+            setElectricity("EEDC");
+            setPage("inputPage");
+          }}>
           {" "}
           <img src={EEDC} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("Ibadan")}}>
+        <Link   onClick={() => {
+            setElectricity("IBEDC");
+            setPage("inputPage");
+          }}>
           <img src={IBEDC} alt="" />
         </Link>
-        <Link onClick={() => {setElectricity("Kano")}}>
+        <Link   onClick={() => {
+            setElectricity("KEDCO");
+            setPage("inputPage");
+          }}>
           <img src={KEDCO} alt="" />
         </Link>
       </div>

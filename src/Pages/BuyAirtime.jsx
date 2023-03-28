@@ -23,10 +23,13 @@ const Buyairtime = () => {
       return setError("Input can't be empty");
     } else {
       setPages("pinPage");
-    }
+    };
   };
   const toggle = () =>{
     setPages('confirmAirtime')
+  }
+  const click = () =>{
+    setPages('PaidAirtime')
   }
   // const payPage = () =>{
   //   setPages('paidAirtime')
@@ -48,29 +51,30 @@ const Buyairtime = () => {
                 <option value="etisalat">ETISALAT</option>
               </select>
             </div>
-
             <div className="phone-airtime">
               <div className="number-airtime">
                 <label htmlFor="">Phone Number</label>
                 <input type="number" onChange={(e) =>{setAirtime({...airtime, Number : e.target.value})}} />
+                
               </div>
               <div className="number-airtime">
                 <label htmlFor="">Amount</label>
                 <input type="number" placeholder='&#8358;' onChange={(e) =>{setAirtime({...airtime, Amount : e.target.value})}} />
               </div>
             </div>
+            <p className="airtime-error">{error}</p>
             <Link onClick={authentication}>
               <button>PROCEED</button>
             </Link>
-            <p className="airtime-error">{error}</p>
           </div>
         </form>
       </div>
       <PinPage page={pages} toggle={setPages} />
       <PayAirtime page={pages} airtime={airtime} />
-      {/* <AirtimeTransaction page={pages} airtime={airtime} /> */}
+      <AirtimeTransaction page={pages} airtime={airtime} click={setPages} />
     </div>
   );
 };
 
 export default Buyairtime;
+//how to make page pop up on another using react?
