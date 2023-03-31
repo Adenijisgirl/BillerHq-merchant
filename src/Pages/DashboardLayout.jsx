@@ -11,7 +11,7 @@ import BuyAirtime from "./BuyAirtime";
 import "../stylesheets/dashboardlayout.css";
 import BuyData from "./BuyData";
 import Settings from "../Pages/Settings";
-import EletricityBill from './EletricityBill'
+import EletricityBill from "./ElectricityBill";
 import Ekedc from "./Ekedc";
 import BuyCable from "./BuyCable";
 import Support from './Support'
