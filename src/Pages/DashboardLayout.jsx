@@ -11,7 +11,7 @@ import BuyAirtime from "./BuyAirtime";
 import "../stylesheets/dashboardlayout.css";
 import BuyData from "./BuyData";
 import Settings from "../Pages/Settings";
-import EletricityBill from "./ElectricityBill";
+import ElectricityBill from "./ElectricityBill";
 import Ekedc from "./Ekedc";
 import BuyCable from "./BuyCable";
 import Support from './Support'
@@ -33,26 +33,84 @@ import Roll from "./Rolls/Roll";
 import RollCall from "./Rolls/RollCall";
 import CreateRole from "./Rolls/CreateRole";
 import CreateUser from "./Account/CreateUser";
+import Education from "./Education/Layout"
+import Betting from "./Betting/Layout"
+import google from "../assets/googlelogo.svg";
+import group3 from "../assets/Group3.svg";
+import "../stylesheets/login.css";
 
 function App() {
-  // const [sidebar, setSidebar] = useState(true);
-
-  // const handleclick = () => {
-  //   setSidebar(!sidebar);
-  // };
+  // const [page, setPage] =useState("")
+  // const [error, setError] = useState('')
+  // const [signIn, setSignIn] = useState({
+  //   Name: '',
+  //   Password: ''
+  // })
+  // const authentication = (e) =>{
+  //   e.preventDefault()
+  //   if(signIn.Name === "" ||
+  //   signIn.Password === "")
+  //   return setError('input can not be empty')
+  //   else{
+  //     setPage('dashboard')
+  //   }
+  // }
+  
   return (
-    // <div className={` ${sidebar ? "sidbarcollapse" : "dashboardlayout"}`}>
-    //     <div className='sidebar'>
-    //         <div className='logocontainer'>
-    //             {/* <Logoicon /> */}
-    //             <Closeicon className='closeicon' onClick={handleclick} />
-    //         </div>
-    //         <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
-    //     </div>
+   
     <div className="biller">
       <div className="page-option">
         <div>
           <Navbar />
+         
+          {/* <div className={`signin ${page === ""? "" : "d-none"}`}>
+        <div className="left-sign">
+          <h3>Welcome back!</h3>
+          <p>
+            Keep track of your business all in one place. Pick up right where
+            you left off!! Sign in to continue…
+          </p>
+          <div className="followers">
+            <img src={group3} alt="" />
+            <p>3k+ people joined us, now it’s your turn</p>
+          </div>
+        </div>
+        <div className="right-signin">
+          <form action="">
+            <h3>Sign in</h3>
+            <div className="name-sign">
+              <label htmlFor="">Email</label>
+              <input type="email" onChange={(e)=>{setSignIn({...signIn, Name: e.target.value})}} />
+            </div>
+            <div className="name-sign">
+              <label htmlFor="">Password</label>
+              <input type="password" onChange={(e)=>{setSignIn({...signIn, Password: e.target.value})}} />
+            </div>
+            <div className="forgot-signin">
+              <button className="password-sign">Forgot password?</button>
+              <button className="signin-sign" onClick={authentication}>Sign In</button>
+            </div>
+            <p className="airtime-error"></p>
+            <div className="hr-or">
+              <hr />
+              <p>or</p>
+              <hr />
+            </div>
+            <div className="forgot-signin">
+              <button className="google-signin">
+                <img src={google} alt="" />
+                <p>Google</p>
+              </button>
+              <button className="google-signin">
+                <img src="" alt="" />
+                <p>Facebook</p>
+              </button>
+            </div>
+            <p className="form-protect">Protected by reCAPTCHA and subject to the <strong>Uniswitch Privacy Policy</strong>  and <strong>Terms of Service.</strong> </p>
+          </form>
+        </div>
+      </div> */}
+      
         </div>
         <div className="side-layout">
           <Sidebar />
@@ -66,7 +124,7 @@ function App() {
               <Route path="/buyairtime" exact element={<BuyAirtime />} />
               <Route path="/buydata" exact element={<BuyData />} />
               <Route path="/settings" exact element={<Settings />} />
-              <Route path="/eletricity" exact element={<EletricityBill />} />
+              <Route path="/electricity" exact element={<ElectricityBill />} />
               <Route path='/ekedc' exact element={<Ekedc/>} />
               <Route path='/cable' exact element={<BuyCable/>} />
               <Route path='/support' exact element={<Support />} />
@@ -88,6 +146,8 @@ function App() {
                <Route path='/rolecall' exact element={<RollCall />} /> 
                <Route path='/createrole' exact element={<CreateRole />} />
                <Route path='/createuser' exact element={<CreateUser />} />
+               <Route path='/education' exact element={<Education />} />
+               <Route path='/betting' exact element={<Betting />} />
             </Routes>
 
             

@@ -1,0 +1,102 @@
+.signin{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 4rem; */
+    padding: 4rem 6rem;
+    background: #F5F5F5;
+}
+.left-sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* align-items: center; */
+}
+.left-sign h3{
+    color: black;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.left-sign p{
+  width: 20vw;
+  text-align: justify;
+}
+.followers{
+    display: flex;
+    gap: 1rem;
+}
+.right-signin form{
+    border: 1px solid #087D4C;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    background-color: #FBFCFC;
+    margin-right: 10rem;
+}
+.right-signin h3{
+    color: #087D4C;
+    font-size: 32px;
+    font-weight: 400;
+}
+.right-signin .name-sign {
+display: flex;
+margin-bottom: 2rem;
+
+}
+.right-signin .name-sign label{
+    position: absolute;
+    color: black;
+    background-color: #FBFCFC;
+    margin-top: -0.7rem;
+    margin-left: 1rem;
+}
+.right-signin .name-sign input{
+    padding-left: 0.5rem;
+    height: 6vh;
+    width: 95%;
+    border: 1px solid #DCDBDD;
+    outline: none;
+    border-radius: 10px;
+}
+form .forgot-signin{
+    display: flex;
+    justify-content: space-between;
+}
+.forgot-signin .password-sign{
+    border: none;
+    background-color: #FBFCFC;
+}
+.forgot-signin .signin-sign{
+    border: 1px solid #087D4C;
+    border-radius: 10px;
+    padding: 0.7rem 3rem;
+    outline: none;
+    background-color: #087D4C;
+    color: white;
+}
+.hr-or{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.google-signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+    gap: 1rem;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCDBDD;
+}
+.form-protect{
+    width: 25vw;
+    text-align: justify;
+    font-size: 10px;
+    margin-top: 3rem;
+    /* margin-bottom: 0.5rem; */
+}
+.password-eye{
+    /* position: relative; */
+    margin-left: -30px;
+    cursor: pointer;
+}

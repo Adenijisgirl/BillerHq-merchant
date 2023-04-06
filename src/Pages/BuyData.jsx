@@ -17,13 +17,15 @@ const Buydata = () => {
     Bundle: "",
     Number: "",
     Amount: "",
+    Email: "",
   });
   const authentication = () => {
     if (
       airtime.Network === "" ||
       airtime.Bundle === "" ||
       airtime.Number === "" ||
-      airtime.Amount === ""
+      airtime.Amount === "" ||
+      airtime.Email === ""
     ) {
       return setError("Input can't be empty");
     } else {
@@ -35,7 +37,6 @@ const Buydata = () => {
   }
   const payPage = () =>{
     setPages('paidAirtime')
-
   }
   
   return (
@@ -72,6 +73,11 @@ const Buydata = () => {
               <label htmlFor="">Amount</label>
               <input type="number" placeholder="&#8358;" onChange={(e) =>{setAirtime({...airtime, Amount : e.target.value})}} />
             </div>
+          </div>
+          <div className="eko-form">
+          <label htmlFor="">Email</label>
+              <input type="number" placeholder="lagudatemitayo@gmail.com" onChange={(e) =>{setAirtime({...airtime, Email : e.target.value})}} />
+
           </div>
           <Link onClick={authentication}>
           <button>PROCEED</button>

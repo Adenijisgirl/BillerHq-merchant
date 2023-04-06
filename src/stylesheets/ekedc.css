@@ -29,10 +29,13 @@
         border-radius: 10px;
         margin-bottom: 2rem;
         outline: none;
-        border: 1px solid 92929D;
+        border: 1px solid #92929D80;
+    }
+    .ekedc-service select:not(:-internal-list-box) {
+    color: #92929D80;
     }
 .eko-form label{
-    color: #92929D;
+    color: #92929D80;
     position: absolute;
     margin-top: -10px;
     background-color: white;
@@ -41,7 +44,7 @@
 .eko-form input{
     width: 98%;
     height: 6vh;
-    border: 1px solid #92929D;
+    border: 1px solid #92929D80;
     border-radius: 10px;
     margin-bottom: 2rem;
     outline: none;
