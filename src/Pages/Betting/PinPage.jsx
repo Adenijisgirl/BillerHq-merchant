@@ -1,19 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Lock from "../assets/password-padlock.svg";
-import "../stylesheets/transfercommission.css";
+import Lock from "../../assets/password-padlock.svg"
+import "../../stylesheets/transfercommission.css";
 import { StatefulPinInput } from 'react-input-pin-code';
 
-const PurchaseElectricity = (props) => {
-
-  const action = () => { props.setPage('payElectricity')}
-
-  
-  
-  return (
+const PinPage = (props) => {
+   return (
     <div
       className={` commission-transfer ${
-        props.page === "pinPage" ? "" : "d-none"   
+        props.page === "pinPage" ? "" : "d-none"
       }`}
     >
       <div className="commission-access">
@@ -31,10 +26,11 @@ const PurchaseElectricity = (props) => {
           </div>
           {/* <ResendOTP className='otp-button' renderButton={renderButton} renderTime={renderTime} /> */}
           <Link
-            
+            onClick={() => {
+              props.toggle("confirmEducation"); 
+            }}
           >
-
-            <button onClick={action}  className="proceed-button">PROCEED</button>
+            <button className="proceed-button">PROCEED</button>
           </Link>
         </form>
       </div>
@@ -42,4 +38,4 @@ const PurchaseElectricity = (props) => {
   );
 };
 
-export default PurchaseElectricity;
+export default PinPage;

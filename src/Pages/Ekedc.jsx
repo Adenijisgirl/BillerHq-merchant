@@ -23,13 +23,17 @@ const Ekedc = (props) => {
 Meter: "",
 Service: "",
 Amount: "",
+Email: "",
+Number: "",
   });
   const authentication = (e) =>{
     e.preventDefault()
     if(
     light.Meter === "" ||
     light.Service === "" ||
-    light.Amount === ""
+    light.Amount === "" ||
+    light.Email === "" ||
+    light.Number === ""
   )
   { setError('input cant be empty')
   }
@@ -65,6 +69,14 @@ props.setPage("pinPage")
           <div className="amount">
             <label htmlFor="">Amount</label>
             <input type="text" onChange={(e) =>{setLight({...light, Amount : e.target.value})}} />
+          </div>
+          <div className="amount">
+            <label htmlFor="">Email</label>
+            <input type="text" onChange={(e) =>{setLight({...light, Email : e.target.value})}} />
+          </div>
+          <div className="amount">
+            <label htmlFor="">Phone Number</label>
+            <input type="text" onChange={(e) =>{setLight({...light, Number : e.target.value})}} />
           </div>
           <button onClick={authentication}>PROCEED</button>
           <p className="airtime-error">{error}</p>

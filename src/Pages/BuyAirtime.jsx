@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PinPage from "./PinPage";
 import PayAirtime from "./PayAirtime";
 import "../stylesheets/buyairtime.css";
 import { Link } from "react-router-dom";
 import AirtimeTransaction from "./AirtimeTransaction";
+import {BASE_URL} from '../Helper/Action'
+import Axios from 'axios'
+
+const bASE_URL = process.env.REACT_APP_BASE_URL;
+
 
 const Buyairtime = () => {
   const [pages, setPages] = useState("AirtimePage");
@@ -13,12 +18,14 @@ const Buyairtime = () => {
     Network: "",
     Number: "",
     Amount: "",
+    Email: "",
   });
   const authentication = () => {
     if (
       airtime.Network === "" ||
-      airtime.Number === "" ||
-      airtime.Amount === ""
+      airtime.Number.length !== 11 ? "must be eleven digit" : "" ||
+      airtime.Amount.length !== 3 ? "can't be less than 3 digit" :"" ||
+      airtime.Email === ""
     ) {
       return setError("Input can't be empty");
     } else {
@@ -30,11 +37,17 @@ const Buyairtime = () => {
   }
   const click = () =>{
     setPages('PaidAirtime')
-  }
-  // const payPage = () =>{
-  //   setPages('paidAirtime')
 
-  // }
+  }
+
+  //define url
+  
+  const clickLogin = async(e) =>{
+    e.preventDefault();
+    await Axios.post(`${bASE_URL}/merchants`, airtime
+    ).then ((response) => {console.log(response)}
+    ).catch((err)=> {console.log(err)})
+      }
  
   return (
     <div>
@@ -62,6 +75,10 @@ const Buyairtime = () => {
                 <input type="number" placeholder='&#8358;' onChange={(e) =>{setAirtime({...airtime, Amount : e.target.value})}} />
               </div>
             </div>
+            <div className="eko-form">
+                <label htmlFor="">Email</label>
+                <input type="text" placeholder='lagudatemitayo@gmail.com' onChange={(e) =>{setAirtime({...airtime, Email : e.target.value})}} />
+              </div>
             <p className="airtime-error">{error}</p>
             <Link onClick={authentication}>
               <button>PROCEED</button>

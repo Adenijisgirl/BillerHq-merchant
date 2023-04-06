@@ -1,0 +1,103 @@
+/* layout styling */
+.education-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.education-layout form{
+    border: 1px solid #087D4C;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    width: 30vw;
+    margin-top: 2rem;
+}
+.exams-education h4, p{
+color: black;
+text-align: center;
+}
+.exams-education p{
+    margin-bottom: 4rem;
+}
+ .education-price{
+    display: flex;
+ }
+ .exam-details label{
+color: #92929D80;
+position: absolute;
+margin-top: -1rem;
+margin-left: 0.5rem;
+background-color: white;
+ }
+ .exam-details select{
+    width: 100%;
+    height: 6vh;
+    border-radius: 10px;
+    border: 1px solid #92929D80;
+    margin-bottom: 2rem;
+    outline: none;
+    padding-left: 0.5rem;
+ }
+ .exam-details input{
+    width: 100%;
+    height: 6vh;
+    border-radius: 10px;
+    border: 1px solid #92929D80;
+    margin-bottom: 2rem;
+    outline: none;
+    padding-left: 0.5rem;
+
+ }
+ .education-details{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+ }
+ .education-price{
+    display: flex;
+    width: 50%;
+ }
+ .education-price label{
+    position: absolute;
+    color: #92929D80;
+    margin-top: -1rem;
+    margin-left: 0.5rem;
+    background-color: white;
+ }
+ .education-price input{
+    width: 100%;
+    height: 6vh;
+    border-radius: 10px;
+    border: 1px solid #92929D80;
+    margin-bottom: 2rem;
+    outline: none;
+    padding-left: 0.5rem;
+ }
+ .education-quantity{
+    display: flex;
+    width: 50%;
+ }
+ .education-quantity label{
+    position: absolute;
+    color: #92929D80;
+    margin-top: -1rem;
+    margin-left: 0.5rem;
+    background-color: white;
+ }
+ .education-quantity input{
+    width: 100%;
+    height: 6vh;
+    border-radius: 10px;
+    border: 1px solid #92929D80;
+    margin-bottom: 2rem;
+    outline: none;
+    padding-left: 0.5rem;
+ }
+ .education-layout button{
+    width: 100%;
+    background-color: #087D4C;
+    border: none;
+    border-radius: 10px;
+    height: 6vh;
+    color: white;
+    margin-bottom: 1rem;
+ }
