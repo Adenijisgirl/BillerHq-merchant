@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Lock from "../assets/password-padlock.svg";
 import "../stylesheets/transfercommission.css";
+import { StatefulPinInput } from "react-input-pin-code";
+
 // import OTPInput, { ResendOTP } from "otp-input-react";
 
 const PurchaseAirtime = (props) => {
@@ -37,46 +39,7 @@ const PurchaseAirtime = (props) => {
         </p>
         <form action="">
           <div className="commission-input">
-            {/* <OTPInput
-              className="input"
-              value={OTP}
-              onChange={setOTP}
-              autoFocus
-              OTPLength={4}
-              otpType="number"
-              disabled={false}
-              secure
-            /> */}
-            {/* <ResendOTP onResendClick={() => console.log("Resend clicked")} /> */}
-            <input
-              className="in-input"
-              type="number"
-              placeholder="0"
-              maxlength="1"
-              autofocus
-              secure
-            />
-            <input
-              className="in-input"
-              type="number"
-              placeholder="0"
-              maxlength="1"
-              secure
-            />
-            <input
-              className="in-input"
-              type="number"
-              placeholder="0"
-              maxlength="1"
-              secure
-            />
-            <input
-              className="in-input"
-              type="number"
-              placeholder="0"
-              maxlength="1"
-              secure
-            />
+            <StatefulPinInput className="common" length={4} initialValue="" />
           </div>
           {/* <ResendOTP className='otp-button' renderButton={renderButton} renderTime={renderTime} /> */}
           <Link
@@ -93,3 +56,5 @@ const PurchaseAirtime = (props) => {
 };
 
 export default PurchaseAirtime;
+
+// input for four digit pin using react?

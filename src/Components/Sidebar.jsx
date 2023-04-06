@@ -68,7 +68,7 @@ const Sidebar = () => {
               <img src={icon8} alt=""  />
               <span className="span">Roles and Permission</span>
             </Link>
-            <Link to="/dashboard">
+            <Link to="/">
               <img src={icon7} alt="" />
               <span className="span">Logout</span>
             </Link>

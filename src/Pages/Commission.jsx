@@ -4,9 +4,7 @@ import wallet from "../assets/wallet.svg";
 import commission from "../assets/commission.svg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import axios from "react-router-dom";
-import TransferCommission from "./TransferCommission";
-import ApprovedCommission from "./ApprovedCommission";
+
 
 const Commission = () => {
   // const [items, setItems] = useState([]);
@@ -81,7 +79,7 @@ const Commission = () => {
           </div>
         </div>
         {/* onClick={refresh} */}
-        <button>Refresh</button>
+        {/* <button>Refresh</button> */}
       </div>
       <div className="commit">
         <div className="commission-table">

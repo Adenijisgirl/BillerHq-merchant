@@ -96,7 +96,7 @@ const Account = () => {
             <th>Name</th>
             <th>Email </th>
             <th>Roll</th>
-            <th>Roll</th>
+            <th>Status</th>
             <th></th>
           </tr>
         </thead>
