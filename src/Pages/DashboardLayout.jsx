@@ -35,6 +35,7 @@ import CreateRole from "./Rolls/CreateRole";
 import CreateUser from "./Account/CreateUser";
 import Education from "./Education/Layout"
 import Betting from "./Betting/Layout"
+import UserMessage from '../Pages/Account/UserMessage'
 import google from "../assets/googlelogo.svg";
 import group3 from "../assets/Group3.svg";
 import "../stylesheets/login.css";
@@ -148,6 +149,8 @@ function App() {
                <Route path='/createuser' exact element={<CreateUser />} />
                <Route path='/education' exact element={<Education />} />
                <Route path='/betting' exact element={<Betting />} />
+               <Route path='/usermessage' exact element={<UserMessage />} />
+
             </Routes>
 
             
