@@ -37,17 +37,12 @@ const Buyairtime = () => {
   }
   const click = () =>{
     setPages('PaidAirtime')
-
   }
+ 
 
-  //define url
+
   
-  const clickLogin = async(e) =>{
-    e.preventDefault();
-    await Axios.post(`${bASE_URL}/merchants`, airtime
-    ).then ((response) => {console.log(response)}
-    ).catch((err)=> {console.log(err)})
-      }
+ 
  
   return (
     <div>
@@ -80,7 +75,7 @@ const Buyairtime = () => {
                 <input type="text" placeholder='lagudatemitayo@gmail.com' onChange={(e) =>{setAirtime({...airtime, Email : e.target.value})}} />
               </div>
             <p className="airtime-error">{error}</p>
-            <Link onClick={authentication}>
+            <Link onClick={authentication} >
               <button>PROCEED</button>
             </Link>
           </div>

@@ -8,15 +8,15 @@ export const useProfile = () =>{
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(null)
     
-    let token = ""
+    let token = sessionStorage.getItem('access_token')
 
     const profile = async() =>{
     setIsLoading(true)
 
 
-   await axios.get(`${BASE_URL} /merchants/profile`, 
+   await axios.get(`${BASE_URL}/merchants/profile`, 
     {
-        header: {
+        headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json"
         }

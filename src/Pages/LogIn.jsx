@@ -1,33 +1,45 @@
 import React from "react";
 import google from "../assets/googlelogo.svg";
 import group3 from "../assets/Group3.svg";
-import eye from '../assets/passwordeye.svg'
-import facebook from '../assets/facebooklogo.svg'
+import eye from "../assets/passwordeye.svg";
+import facebook from "../assets/facebooklogo.svg";
 import "../stylesheets/login.css";
 import Navbar from "../Components/Navbar";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { useState } from "react";
-import {BASE_URL} from '../Helper/Action'
+import { BASE_URL } from "../Helper/Action";
 import Axios from "axios";
-
+import Loading from "./Loading";
+import { useNavigate } from "react-router-dom";
 
 const LogIn = () => {
-  const [value, setValue] = useState(
-    {
-      Email: "",
-      Password: ""
-    }
-  )
-  const clickLogin = async(e) =>{
-e.preventDefault();
-await Axios.post(`${BASE_URL}/merchants/auth/token`, value
-).then ((response) => {console.log(response)}
-).catch((err)=> {console.log(err)})
-  }
+  let Navigate = useNavigate()
 
-  // Axios.post(‘${BASE_URL}/merchant, data).then((response)=> log response).catch((err)=> log err)
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [isLoading, setIsLoading] = useState(null);
+  const [value, setValue] = useState({
+    email: "",
+    password: "",
+  });
 
-  
+  const clickLogin = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    await Axios.post(`${BASE_URL}/api/login`, value)
+      .then((response) => {
+        // let user = response.data.data;
+        sessionStorage.setItem("access_token", response.data.access_token);
+        setIsLoading(false);
+        Navigate('/dashboard')
+        console.log(response)
+      })
+      .catch((err) => {
+        setEmailError(err.response.data.data.email);
+        setPasswordError(err.response.data.data.password);
+        setIsLoading(false);
+      });
+  };
   return (
     <div>
       <Navbar />
@@ -46,24 +58,38 @@ await Axios.post(`${BASE_URL}/merchants/auth/token`, value
         <div className="right-signin">
           <form action="">
             <h3>Sign in</h3>
-            <div className="name-sign">
-              <label htmlFor="">Email</label>
-              <input type="email" onClick={clickLogin} onChange={(e)=>{setValue({...value, Email: e.target.value})}} />
+            <div>
+              <div className="name-sign">
+                <label htmlFor="">Email</label>
+                <input
+                  type="email"
+                  onChange={(e) => {
+                    setValue({ ...value, email: e.target.value });
+                  }}
+                />
+              </div>
+              <p className="login-error">{emailError}</p>
             </div>
-            <div className="name-sign">
-              <label htmlFor="">Password</label>
-              <input type="password" onClick={clickLogin}  onChange={(e)=>{setValue({...value, Password: e.target.value})}}/>
-              <img className="password-eye" src={eye} alt="" />
-            </div>
-            <div className="name-sign">
-              <label htmlFor="">Confirm Password</label>
-              <input type="password" onClick={clickLogin}  onChange={(e)=>{setValue({...value, Password: e.target.value})}}/>
-              <img className="password-eye" src={eye} alt="" />
+            <div>
+              <div className="name-sign">
+                <label htmlFor="">Password</label>
+                <input
+                  type="password"
+                  onChange={(e) => {
+                    setValue({ ...value, password: e.target.value });
+                  }}
+                />
+                <img className="password-eye" src={eye} alt="" />
+              </div>
+              <p className="login-error">{passwordError}</p>
             </div>
             <div className="forgot-signin">
               <button className="password-sign">Forgot password?</button>
-              <Link to='/dashboard'>
-              <button className="signin-sign">Sign In</button>
+              <Link onClick={clickLogin}>
+                <button className="signin-sign">
+                  {" "}
+                  {isLoading ? <Loading /> : "SignIn"}
+                </button>
               </Link>
             </div>
             <div className="hr-or">
@@ -81,7 +107,11 @@ await Axios.post(`${BASE_URL}/merchants/auth/token`, value
                 <p>Facebook</p>
               </button>
             </div>
-            <p className="form-protect">Protected by reCAPTCHA and subject to the <strong>Uniswitch Privacy Policy</strong>  and <strong>Terms of Service.</strong> </p>
+            <p className="form-protect">
+              Protected by reCAPTCHA and subject to the{" "}
+              <strong>Uniswitch Privacy Policy</strong> and{" "}
+              <strong>Terms of Service.</strong>{" "}
+            </p>
           </form>
         </div>
       </div>
