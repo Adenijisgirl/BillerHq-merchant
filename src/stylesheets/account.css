@@ -124,7 +124,7 @@ flex-direction: column;
 
 }
 .account-user{
-    margin-bottom: 2rem;
+    
 }
 .account-user label{
     color: gray;
@@ -160,7 +160,19 @@ flex-direction: column;
     color: white;
 }
 
-
+/* .user-error{
+    margin-block-start: 0;
+    color: red;
+} */
+.user-error1{
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: red;
+}
+.create-error{
+    margin-bottom: 3rem;
+}
 
 
 

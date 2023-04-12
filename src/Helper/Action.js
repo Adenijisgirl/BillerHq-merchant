@@ -1,1 +1,1 @@
-export const BASE_URL = "https://api.dev.billerhq.com/api/v1"
+export const BASE_URL = "https://merchant-api.dev.billerhq.com"
